@@ -1,0 +1,21 @@
+{
+  "eval_name": "vintage-brass-pocket-watch",
+  "prompt": "can you model a vintage brass pocket watch in blender for me? open case, enamel dial with roman numerals, the chain draped on a dark walnut table. I want it to look like an actual photo, close-up product shot. save the blend file in my Documents folder",
+  "assertions": [
+    "A .blend file was saved and its path was confirmed by Blender tool output",
+    "A final rendered image file exists and Blender output confirmed it was written",
+    "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+    "All visible mesh objects have a material assigned",
+    "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+    "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+    "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+    "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+    "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+    "The watch case diameter is between 0.035 m and 0.065 m (real-world scale)",
+    "The dial has twelve hour markers as Roman numerals (geometry, text objects or texture)",
+    "A chain made of links or a link-like curve is present and lies on the table",
+    "The brass material has metallic 1.0 and a warm yellow base color",
+    "The table material shows wood grain (procedural or image texture) rather than a flat color",
+    "The camera has depth of field enabled and is framed as a close-up on the watch"
+  ]
+}

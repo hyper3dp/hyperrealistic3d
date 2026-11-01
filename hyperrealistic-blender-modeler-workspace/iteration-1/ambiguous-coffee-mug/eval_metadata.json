@@ -1,0 +1,20 @@
+{
+  "eval_name": "ambiguous-coffee-mug",
+  "prompt": "blender: realistic coffee mug pls",
+  "assertions": [
+    "A .blend file was saved and its path was confirmed by Blender tool output",
+    "A final rendered image file exists and Blender output confirmed it was written",
+    "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+    "All visible mesh objects have a material assigned",
+    "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+    "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+    "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+    "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+    "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+    "The response states its assumptions (mug style, size, material or setting) instead of asking clarifying questions and stopping",
+    "The mug is between 0.07 m and 0.13 m tall",
+    "The mug has a handle attached to the body",
+    "The mug has real wall thickness (hollow interior), not a solid cylinder",
+    "The mug material is a glossy ceramic glaze (low roughness or coat layer)"
+  ]
+}

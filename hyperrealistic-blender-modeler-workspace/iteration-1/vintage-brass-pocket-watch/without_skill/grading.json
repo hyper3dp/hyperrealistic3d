@@ -1,0 +1,85 @@
+{
+  "expectations": [
+    {
+      "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+      "passed": true,
+      "evidence": "vintage_brass_pocket_watch.blend exists. Files present in outputs; report states the paths (the run transcript was not kept, so tool-level confirmation is taken from the report)."
+    },
+    {
+      "text": "A final rendered image file exists and Blender output confirmed it was written",
+      "passed": true,
+      "evidence": "final_render.png (1600x1200) exists."
+    },
+    {
+      "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+      "passed": true,
+      "evidence": "engine CYCLES, AgX, Medium High Contrast."
+    },
+    {
+      "text": "All visible mesh objects have a material assigned",
+      "passed": true,
+      "evidence": "Only Chain_Path (non-rendering guide curve) lacks a material."
+    },
+    {
+      "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+      "passed": false,
+      "evidence": "No collections at all (everything in the scene root); camera still named 'Camera'."
+    },
+    {
+      "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+      "passed": true,
+      "evidence": "Brass_Aged roughness is node-driven (17 nodes)."
+    },
+    {
+      "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+      "passed": true,
+      "evidence": "12 of 29 objects have Bevel modifiers."
+    },
+    {
+      "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+      "passed": false,
+      "evidence": "Report mentions no audit, multi-angle inspection or fix cycle."
+    },
+    {
+      "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+      "passed": true,
+      "evidence": "Report lists files and names weak spots (clean brass, streaky walnut, garbled maker text)."
+    },
+    {
+      "text": "The watch case diameter is between 0.035 m and 0.065 m (real-world scale)",
+      "passed": true,
+      "evidence": "Case_Body is 50.8 mm across."
+    },
+    {
+      "text": "The dial has twelve hour markers as Roman numerals (geometry, text objects or texture)",
+      "passed": true,
+      "evidence": "Render shows a full set of Roman numerals including VI."
+    },
+    {
+      "text": "A chain made of links or a link-like curve is present and lies on the table",
+      "passed": true,
+      "evidence": "Watch_Chain lies on the table in the render."
+    },
+    {
+      "text": "The brass material has metallic 1.0 and a warm yellow base color",
+      "passed": true,
+      "evidence": "Brass_Aged metallic 1.0, warm linked base color."
+    },
+    {
+      "text": "The table material shows wood grain (procedural or image texture) rather than a flat color",
+      "passed": true,
+      "evidence": "Walnut_Wood has a 15-node grain graph; grain visible (streaky)."
+    },
+    {
+      "text": "The camera has depth of field enabled and is framed as a close-up on the watch",
+      "passed": true,
+      "evidence": "Camera 90 mm, DOF on at f/6.3, close framing."
+    }
+  ],
+  "summary": {
+    "passed": 13,
+    "failed": 2,
+    "total": 15,
+    "pass_rate": 0.867
+  }
+}

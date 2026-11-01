@@ -1,0 +1,227 @@
+{
+ "engine": "CYCLES",
+ "vt": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "res": [
+  1600,
+  1200,
+  100
+ ],
+ "samples": 512,
+ "n_obj": 10,
+ "nomat": [],
+ "defaults": [],
+ "n_bevelled": 1,
+ "n_mesh": 5,
+ "collections": {
+  "Cameras": 2,
+  "Environment": 2,
+  "Lights": 3,
+  "Model_CoffeeMug": 3
+ },
+ "materials": {
+  "MAT_Ceramic_SpeckledGlaze": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 29,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_VORONOI",
+    "VALTORGB"
+   ]
+  },
+  "MAT_Coffee_Black": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": 0.03,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VECT_MATH"
+   ]
+  },
+  "MAT_Wall_PaintedPlaster": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": 0.85,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 4,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE",
+    "VALTORGB"
+   ]
+  },
+  "MAT_Wood_OiledOak": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 13,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MAP_RANGE",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VALTORGB",
+    "VECT_MATH"
+   ]
+  }
+ },
+ "camera": {
+  "name": "CAM_Hero",
+  "lens": 70.0,
+  "dof": true,
+  "fstop": 4.0,
+  "z": 0.26,
+  "rot_deg": [
+   65.0,
+   -0.0,
+   -24.5
+  ],
+  "shift_y": 0.0
+ },
+ "n_lights": 3,
+ "lights": [
+  [
+   "LGT_Key",
+   "AREA",
+   10.0
+  ],
+  [
+   "LGT_Fill",
+   "AREA",
+   2.0
+  ],
+  [
+   "LGT_Rim",
+   "AREA",
+   8.0
+  ]
+ ],
+ "instances": 0,
+ "shared_meshes": 0,
+ "world": [
+  "BACKGROUND",
+  "OUTPUT_WORLD"
+ ],
+ "objects": [
+  {
+   "n": "Mug_Body",
+   "dim": [
+    0.1084,
+    0.1084,
+    0.0954
+   ],
+   "zmin": 0.0,
+   "mods": [
+    "SUBSURF"
+   ],
+   "mats": [
+    "MAT_Ceramic_SpeckledGlaze"
+   ],
+   "col": [
+    "Model_CoffeeMug"
+   ]
+  },
+  {
+   "n": "Mug_Handle",
+   "dim": [
+    0.0448,
+    0.0311,
+    0.0669
+   ],
+   "zmin": 0.0193,
+   "mods": [
+    "SUBSURF"
+   ],
+   "mats": [
+    "MAT_Ceramic_SpeckledGlaze"
+   ],
+   "col": [
+    "Model_CoffeeMug"
+   ]
+  },
+  {
+   "n": "Mug_Coffee",
+   "dim": [
+    0.0989,
+    0.0989,
+    0.0042
+   ],
+   "zmin": 0.076,
+   "mods": [
+    "SOLIDIFY"
+   ],
+   "mats": [
+    "MAT_Coffee_Black"
+   ],
+   "col": [
+    "Model_CoffeeMug"
+   ]
+  },
+  {
+   "n": "Table_Top",
+   "dim": [
+    1.4,
+    0.9,
+    0.03
+   ],
+   "zmin": -0.03,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Wood_OiledOak"
+   ],
+   "col": [
+    "Environment"
+   ]
+  },
+  {
+   "n": "Backdrop_Wall",
+   "dim": [
+    3.0,
+    0.0,
+    3.0
+   ],
+   "zmin": -0.9,
+   "mods": [],
+   "mats": [
+    "MAT_Wall_PaintedPlaster"
+   ],
+   "col": [
+    "Environment"
+   ]
+  }
+ ],
+ "n_objects_listed": 5
+}

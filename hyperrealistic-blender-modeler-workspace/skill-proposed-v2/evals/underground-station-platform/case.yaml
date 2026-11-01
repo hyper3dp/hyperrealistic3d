@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: underground-station-platform
+expected_outcome: |
+  A full underground platform environment at real scale (vaulted tiled tunnel, platform, four-rail track, tunnel mouth) built from instanced modules with variation, physically placed grime, many practical lights, an eye-level camera down the platform, a confirmed Cycles render and saved .blend, with generic rather than traced trademarked branding.

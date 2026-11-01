@@ -1,0 +1,65 @@
+{
+  "expectations": [
+    {
+      "text": "The platform tunnel is built at real scale: vault diameter roughly 6-8 m and the platform at least 60 m long",
+      "passed": false,
+      "evidence": "Vault 8.1 m wide x 6.3 m high is right, but the modelled platform (Platform_Slab, Vault_TiledShell) is only 51 m long; real deep-tube platforms are ~110-130 m and the skill's own reference says so. The report states '51 m modelled length' without flagging it as a shortcut."
+    },
+    {
+      "text": "Repeated elements (wall bays, lights, benches or posters) are instances or linked duplicates rather than separate full copies",
+      "passed": true,
+      "evidence": "57 instances in the evaluated scene; benches are collection instances of KIT_Bench_A/B; fittings built from KIT_Modules."
+    },
+    {
+      "text": "Repeated modules have visible variation (at least two variants or randomized transforms/material per instance)",
+      "passed": true,
+      "evidence": "Two bench variants (one missing a slat), random offsets/rotations, per-fitting colour temperature 4100-4700 K, one dead and one failing fitting."
+    },
+    {
+      "text": "Wall tiles show per-tile variation and grout (not a single flat color)",
+      "passed": true,
+      "evidence": "Brick-texture tile shader with per-tile value/hue, odd replacement tiles, recessed grout; visible in render."
+    },
+    {
+      "text": "Grime is placed by physical logic (e.g. dirt near the floor, soot near ceiling or tunnel mouth, streaks) rather than uniform noise",
+      "passed": true,
+      "evidence": "Floor-up dirt, brake dust rising from trackbed, crown soot, soot fan at tunnel mouth, drip streaks, polished walking path."
+    },
+    {
+      "text": "The track includes running rails, sleepers and conductor rail(s)",
+      "passed": true,
+      "evidence": "Bullhead running rails, cast-iron chairs (Array), positive and negative conductor rails on insulator pots, pit; sleepers in tunnel section."
+    },
+    {
+      "text": "Lighting comes from multiple practical light fittings along the platform backed by actual lights, not only a world color or single sun",
+      "passed": true,
+      "evidence": "34 lights: 32 strip fittings each with an area light inside an emissive diffuser, plus signal and bulkheads."
+    },
+    {
+      "text": "The camera is at roughly eye height (1.3-1.8 m) looking along the platform toward the tunnel, with vertical lines kept vertical",
+      "passed": true,
+      "evidence": "CAM_Hero at z=1.65 m, X rotation 90.0 deg (level), 28 mm, looking down the platform at the tunnel mouth."
+    },
+    {
+      "text": "Signage uses an invented station name or generic style rather than tracing exact trademarked logos, or the report states this choice",
+      "passed": true,
+      "evidence": "Invented 'HALLAM CROSS' name, roundel-style boards (not the trademark), invented poster brands; stated in report."
+    },
+    {
+      "text": "A Cycles render file and a .blend were written and confirmed by tool output",
+      "passed": true,
+      "evidence": "underground_station_platform.blend and 1920x1080 final_render.png exist; report notes Blender saved them (built headless because the MCP link was down)."
+    },
+    {
+      "text": "The final report gives honest known flaws and scene stats or performance notes",
+      "passed": true,
+      "evidence": "Report lists ~326k triangles, render time 104 s, audit result, and a specific limitations list."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 1,
+    "total": 11,
+    "pass_rate": 0.909
+  }
+}

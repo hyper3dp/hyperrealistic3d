@@ -1,0 +1,3612 @@
+{
+ "engine": "CYCLES",
+ "vt": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "res": [
+  1920,
+  1080,
+  100
+ ],
+ "samples": 384,
+ "n_obj": 247,
+ "nomat": [],
+ "defaults": [],
+ "n_bevelled": 120,
+ "n_mesh": 206,
+ "collections": {
+  "Cameras": 2,
+  "Furniture": 4,
+  "KIT_Bench_A": 3,
+  "KIT_Bench_B": 3,
+  "KIT_Modules": 7,
+  "Lighting": 98,
+  "Platform": 8,
+  "Props": 17,
+  "RunningTunnel": 14,
+  "Signage": 78,
+  "Structure": 5,
+  "Track": 14
+ },
+ "materials": {
+  "MAT_Bench_Frame_Paint": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 20,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Bench_Timber": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": "linked",
+   "trans": 0.0,
+   "nodes": 24,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OBJECT_INFO",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_WAVE"
+   ]
+  },
+  "MAT_Board_Housing": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Cable_Rubber": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_CableTray_Galv": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 20,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_CastIron_Chair": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 20,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_ConductorRail_Steel": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 19,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Coping_Concrete": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 15,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_CrispPacket": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_CupSleeve": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Diffuser_Dead": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Diffuser_Failing": {
+   "base": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "metal": 0.0,
+   "rough": 0.4,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "MAT_Diffuser_Lit": {
+   "base": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "metal": 0.0,
+   "rough": 0.4,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "MAT_DotMatrix_Amber": {
+   "base": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "metal": 0.0,
+   "rough": 0.4,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "MAT_Enamel_Blue": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Enamel_Red": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Enamel_White": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Haze_Volume": {
+   "principled": false,
+   "nodes": 2
+  },
+  "MAT_Insulator_Ceramic": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_LightHousing_Paint": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 20,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_NegativeRail_Steel": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 19,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Newspaper": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_PaperCup": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Pit_Concrete": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 23,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_PlatformFace_Concrete": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 18,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_PlatformFloor_Tile": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 50,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPARATE_COLOR",
+    "SEPXYZ",
+    "TEX_BRICK",
+    "TEX_NOISE",
+    "TEX_VORONOI",
+    "VECT_MATH"
+   ]
+  },
+  "MAT_Poster_Bank": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 31,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Poster_Coast": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 30,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VECT_MATH"
+   ]
+  },
+  "MAT_Poster_Coffee": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 31,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Poster_Film": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 44,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VECT_MATH"
+   ]
+  },
+  "MAT_Poster_Gallery": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 33,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Poster_Musical": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 31,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VECT_MATH"
+   ]
+  },
+  "MAT_Poster_Sale": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 46,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_PosterFrame_Alu": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 20,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Print_Black": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Print_White": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Print_Yellow": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Puddle_Water": {
+   "base": [
+    0.02,
+    0.02,
+    0.02
+   ],
+   "metal": 0.0,
+   "rough": 0.02,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 5,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_RunningRail_Steel": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 19,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_SafetyLine_YellowPaint": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 12,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Signal_Lens_Off": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 9,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Signal_Red": {
+   "base": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "metal": 0.0,
+   "rough": 0.4,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "MAT_Sleeper_Concrete": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 18,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_TactilePaving": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 16,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE",
+    "VECT_MATH"
+   ]
+  },
+  "MAT_Trackbed_Concrete": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 23,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_TunnelSegment_Iron": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 20,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_WallTile_Glazed": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 73,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "SEPARATE_COLOR",
+    "SEPXYZ",
+    "TEX_BRICK",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VECT_MATH"
+   ]
+  }
+ },
+ "camera": {
+  "name": "CAM_Hero",
+  "lens": 28.0,
+  "dof": false,
+  "fstop": 2.8,
+  "z": 1.65,
+  "rot_deg": [
+   90.0,
+   -0.0,
+   6.5
+  ],
+  "shift_y": 0.0
+ },
+ "n_lights": 34,
+ "lights": [
+  [
+   "Light_Plat_00_Area",
+   "AREA",
+   60.86
+  ],
+  [
+   "Light_Track_00_Area",
+   "AREA",
+   45.27
+  ],
+  [
+   "Light_Plat_01_Area",
+   "AREA",
+   61.53
+  ],
+  [
+   "Light_Track_01_Area",
+   "AREA",
+   54.95
+  ],
+  [
+   "Light_Plat_02_Area",
+   "AREA",
+   55.37
+  ],
+  [
+   "Light_Track_02_Area",
+   "AREA",
+   53.39
+  ],
+  [
+   "Light_Plat_03_Area",
+   "AREA",
+   65.29
+  ],
+  [
+   "Light_Track_03_Area",
+   "AREA",
+   47.87
+  ],
+  [
+   "Light_Plat_04_Area",
+   "AREA",
+   64.05
+  ],
+  [
+   "Light_Track_04_Area",
+   "AREA",
+   52.06
+  ],
+  [
+   "Light_Plat_05_Area",
+   "AREA",
+   55.07
+  ],
+  [
+   "Light_Track_05_Area",
+   "AREA",
+   47.56
+  ],
+  [
+   "Light_Plat_06_Area",
+   "AREA",
+   62.13
+  ],
+  [
+   "Light_Track_06_Area",
+   "AREA",
+   50.28
+  ],
+  [
+   "Light_Plat_07_Area",
+   "AREA",
+   58.75
+  ],
+  [
+   "Light_Plat_08_Area",
+   "AREA",
+   65.32
+  ],
+  [
+   "Light_Track_08_Area",
+   "AREA",
+   46.11
+  ],
+  [
+   "Light_Plat_09_Area",
+   "AREA",
+   62.76
+  ],
+  [
+   "Light_Track_09_Area",
+   "AREA",
+   50.15
+  ],
+  [
+   "Light_Plat_10_Area",
+   "AREA",
+   14.22
+  ]
+ ],
+ "instances": 57,
+ "shared_meshes": 0,
+ "world": [
+  "BACKGROUND",
+  "OUTPUT_WORLD"
+ ],
+ "objects": [
+  {
+   "n": "Vault_TiledShell",
+   "dim": [
+    8.0998,
+    51.0,
+    6.2608
+   ],
+   "zmin": -1.3109,
+   "mods": [
+    "SOLIDIFY"
+   ],
+   "mats": [
+    "MAT_WallTile_Glazed"
+   ],
+   "col": [
+    "Structure"
+   ]
+  },
+  {
+   "n": "EndWall_TunnelMouth",
+   "dim": [
+    7.4998,
+    0.4,
+    5.7999
+   ],
+   "zmin": -1.15,
+   "mods": [
+    "SOLIDIFY",
+    "BOOLEAN"
+   ],
+   "mats": [
+    "MAT_WallTile_Glazed"
+   ],
+   "col": [
+    "Structure"
+   ]
+  },
+  {
+   "n": "EndWall_Rear",
+   "dim": [
+    7.4998,
+    0.4,
+    5.7999
+   ],
+   "zmin": -1.15,
+   "mods": [
+    "SOLIDIFY"
+   ],
+   "mats": [
+    "MAT_WallTile_Glazed"
+   ],
+   "col": [
+    "Structure"
+   ]
+  },
+  {
+   "n": "TunnelMouth_Collar",
+   "dim": [
+    4.26,
+    0.12,
+    4.26
+   ],
+   "zmin": -1.98,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_TunnelSegment_Iron"
+   ],
+   "col": [
+    "Structure"
+   ]
+  },
+  {
+   "n": "Haze_Volume",
+   "dim": [
+    7.9,
+    110.9,
+    6.6
+   ],
+   "zmin": -1.9,
+   "mods": [],
+   "mats": [
+    "MAT_Haze_Volume"
+   ],
+   "col": [
+    "Structure"
+   ]
+  },
+  {
+   "n": "Trackbed_Left",
+   "dim": [
+    1.85,
+    49.0,
+    0.85
+   ],
+   "zmin": -2.0,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Trackbed_Concrete"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Trackbed_Right",
+   "dim": [
+    0.8,
+    49.0,
+    0.85
+   ],
+   "zmin": -2.0,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Trackbed_Concrete"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Pit_Floor",
+   "dim": [
+    1.12,
+    49.0,
+    0.35
+   ],
+   "zmin": -2.1,
+   "mods": [],
+   "mats": [
+    "MAT_Pit_Concrete"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Pit_EndWall",
+   "dim": [
+    1.12,
+    0.3,
+    0.85
+   ],
+   "zmin": -2.0,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Trackbed_Concrete"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Trackbed_Tunnel",
+   "dim": [
+    4.0,
+    61.7,
+    0.85
+   ],
+   "zmin": -2.0,
+   "mods": [],
+   "mats": [
+    "MAT_Trackbed_Concrete"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Rail_Running_Left",
+   "dim": [
+    0.07,
+    111.0,
+    0.143
+   ],
+   "zmin": -1.09,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_RunningRail_Steel"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Rail_Running_Right",
+   "dim": [
+    0.07,
+    111.0,
+    0.143
+   ],
+   "zmin": -1.09,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_RunningRail_Steel"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Rail_Conductor_Positive",
+   "dim": [
+    0.076,
+    111.0,
+    0.1
+   ],
+   "zmin": -0.971,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_ConductorRail_Steel"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Rail_Conductor_Negative",
+   "dim": [
+    0.076,
+    111.0,
+    0.1
+   ],
+   "zmin": -1.009,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_NegativeRail_Steel"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "RailChairs_Left",
+   "dim": [
+    0.3,
+    110.0102,
+    0.12
+   ],
+   "zmin": -1.15,
+   "mods": [
+    "ARRAY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "RailChairs_Right",
+   "dim": [
+    0.3,
+    110.0102,
+    0.12
+   ],
+   "zmin": -1.15,
+   "mods": [
+    "ARRAY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Sleepers_Tunnel",
+   "dim": [
+    2.5,
+    60.69,
+    0.1
+   ],
+   "zmin": -1.2,
+   "mods": [
+    "ARRAY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Sleeper_Concrete"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Insulator_Pots",
+   "dim": [
+    1.235,
+    108.015,
+    0.179
+   ],
+   "zmin": -1.15,
+   "mods": [],
+   "mats": [
+    "MAT_Insulator_Ceramic"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Pit_CrossBearers",
+   "dim": [
+    1.3,
+    44.32,
+    0.06
+   ],
+   "zmin": -1.21,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Track"
+   ]
+  },
+  {
+   "n": "Platform_Slab",
+   "dim": [
+    4.35,
+    51.0,
+    1.94
+   ],
+   "zmin": -2.0,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PlatformFace_Concrete"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Platform_Coping",
+   "dim": [
+    0.42,
+    51.0,
+    0.104
+   ],
+   "zmin": -0.1,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Coping_Concrete"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Platform_SafetyLine",
+   "dim": [
+    0.1,
+    51.0,
+    0.032
+   ],
+   "zmin": -0.03,
+   "mods": [],
+   "mats": [
+    "MAT_SafetyLine_YellowPaint"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Platform_TactileStrip",
+   "dim": [
+    0.4,
+    51.0,
+    0.033
+   ],
+   "zmin": -0.03,
+   "mods": [],
+   "mats": [
+    "MAT_TactilePaving"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Platform_Floor",
+   "dim": [
+    3.48,
+    51.0,
+    0.03
+   ],
+   "zmin": -0.03,
+   "mods": [],
+   "mats": [
+    "MAT_PlatformFloor_Tile"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Paint_MindTheGap_0",
+   "dim": [
+    0.112,
+    1.0856,
+    0.0
+   ],
+   "zmin": 0.0055,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Paint_MindTheGap_1",
+   "dim": [
+    0.112,
+    1.0856,
+    0.0
+   ],
+   "zmin": 0.0055,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Paint_MindTheGap_2",
+   "dim": [
+    0.112,
+    1.0856,
+    0.0
+   ],
+   "zmin": 0.0055,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Platform"
+   ]
+  },
+  {
+   "n": "Poster_Track_00_Frame",
+   "dim": [
+    0.2549,
+    3.15,
+    1.6161
+   ],
+   "zmin": 0.6009,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_00_Paper",
+   "dim": [
+    0.22,
+    3.05,
+    1.5095
+   ],
+   "zmin": 0.6517,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Gallery"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_00_Headline",
+   "dim": [
+    0.0338,
+    1.5711,
+    0.1313
+   ],
+   "zmin": 1.7692,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Yellow"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_00_Subline",
+   "dim": [
+    0.0004,
+    0.9041,
+    0.0685
+   ],
+   "zmin": 0.8836,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Yellow"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_01_Frame",
+   "dim": [
+    0.2549,
+    3.15,
+    1.6161
+   ],
+   "zmin": 0.6009,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_01_Paper",
+   "dim": [
+    0.22,
+    3.05,
+    1.5095
+   ],
+   "zmin": 0.6517,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Bank"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_01_Headline",
+   "dim": [
+    0.0347,
+    1.7369,
+    0.156
+   ],
+   "zmin": 1.6256,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Black"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_01_Subline",
+   "dim": [
+    0.0003,
+    0.4804,
+    0.0519
+   ],
+   "zmin": 0.9002,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Black"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_02_Frame",
+   "dim": [
+    0.2549,
+    3.15,
+    1.6161
+   ],
+   "zmin": 0.6009,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_02_Paper",
+   "dim": [
+    0.22,
+    3.05,
+    1.5095
+   ],
+   "zmin": 0.6517,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Musical"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_02_Headline",
+   "dim": [
+    0.0345,
+    1.7525,
+    0.1339
+   ],
+   "zmin": 1.7675,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_02_Subline",
+   "dim": [
+    0.0004,
+    0.9034,
+    0.0688
+   ],
+   "zmin": 0.8836,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_03_Frame",
+   "dim": [
+    0.2549,
+    3.15,
+    1.6161
+   ],
+   "zmin": 0.6009,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_03_Paper",
+   "dim": [
+    0.22,
+    3.05,
+    1.5095
+   ],
+   "zmin": 0.6517,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Coast"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_03_Headline",
+   "dim": [
+    0.0345,
+    2.2341,
+    0.1339
+   ],
+   "zmin": 1.7675,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_03_Subline",
+   "dim": [
+    0.0004,
+    1.2278,
+    0.0701
+   ],
+   "zmin": 0.8836,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_04_Frame",
+   "dim": [
+    0.2549,
+    3.15,
+    1.6161
+   ],
+   "zmin": 0.6009,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_04_Paper",
+   "dim": [
+    0.22,
+    3.05,
+    1.5095
+   ],
+   "zmin": 0.6517,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Film"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_04_Headline",
+   "dim": [
+    0.0409,
+    1.6047,
+    0.1588
+   ],
+   "zmin": 1.7426,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_04_Subline",
+   "dim": [
+    0.0003,
+    0.6758,
+    0.0526
+   ],
+   "zmin": 0.9002,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_05_Frame",
+   "dim": [
+    0.2549,
+    3.15,
+    1.6161
+   ],
+   "zmin": 0.6009,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_05_Paper",
+   "dim": [
+    0.22,
+    3.05,
+    1.5095
+   ],
+   "zmin": 0.6517,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Coffee"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_05_Headline",
+   "dim": [
+    0.03,
+    1.7055,
+    0.135
+   ],
+   "zmin": 1.6466,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Track_05_Subline",
+   "dim": [
+    0.0003,
+    0.6333,
+    0.0535
+   ],
+   "zmin": 0.9002,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_00_Frame",
+   "dim": [
+    0.3065,
+    1.1,
+    1.5463
+   ],
+   "zmin": 0.8004,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_00_Paper",
+   "dim": [
+    0.2689,
+    1.0,
+    1.4399
+   ],
+   "zmin": 0.8503,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Coast"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_00_Headline",
+   "dim": [
+    0.0159,
+    0.8926,
+    0.0529
+   ],
+   "zmin": 1.9473,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_00_Subline",
+   "dim": [
+    0.0016,
+    0.4905,
+    0.028
+   ],
+   "zmin": 1.0931,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_01_Frame",
+   "dim": [
+    0.3065,
+    1.1,
+    1.5463
+   ],
+   "zmin": 0.8004,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_01_Paper",
+   "dim": [
+    0.2689,
+    1.0,
+    1.4399
+   ],
+   "zmin": 0.8503,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Film"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_01_Headline",
+   "dim": [
+    0.0256,
+    0.8701,
+    0.0852
+   ],
+   "zmin": 1.9256,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_01_Subline",
+   "dim": [
+    0.0016,
+    0.3664,
+    0.0285
+   ],
+   "zmin": 1.0964,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_02_Frame",
+   "dim": [
+    0.3065,
+    1.1,
+    1.5463
+   ],
+   "zmin": 0.8004,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_02_Paper",
+   "dim": [
+    0.2689,
+    1.0,
+    1.4399
+   ],
+   "zmin": 0.8503,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Coffee"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_02_Headline",
+   "dim": [
+    0.018,
+    0.8631,
+    0.0676
+   ],
+   "zmin": 1.8259,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_02_Subline",
+   "dim": [
+    0.0015,
+    0.3205,
+    0.0271
+   ],
+   "zmin": 1.0973,
+   "mods": [],
+   "mats": [
+    "MAT_Print_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_03_Frame",
+   "dim": [
+    0.3065,
+    1.1,
+    1.5463
+   ],
+   "zmin": 0.8004,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_03_Paper",
+   "dim": [
+    0.2689,
+    1.0,
+    1.4399
+   ],
+   "zmin": 0.8503,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Sale"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_03_Headline",
+   "dim": [
+    0.0253,
+    0.7554,
+    0.0839
+   ],
+   "zmin": 1.9335,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Black"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_03_Subline",
+   "dim": [
+    0.0024,
+    0.361,
+    0.0433
+   ],
+   "zmin": 1.0838,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Black"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_04_Frame",
+   "dim": [
+    0.3065,
+    1.1,
+    1.5463
+   ],
+   "zmin": 0.8004,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_04_Paper",
+   "dim": [
+    0.2689,
+    1.0,
+    1.4399
+   ],
+   "zmin": 0.8503,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Gallery"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_04_Headline",
+   "dim": [
+    0.0212,
+    0.8519,
+    0.0704
+   ],
+   "zmin": 1.9398,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Yellow"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_04_Subline",
+   "dim": [
+    0.0021,
+    0.4902,
+    0.0371
+   ],
+   "zmin": 1.0874,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Yellow"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_05_Frame",
+   "dim": [
+    0.3065,
+    1.1,
+    1.5463
+   ],
+   "zmin": 0.8004,
+   "mods": [
+    "SOLIDIFY",
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_PosterFrame_Alu"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_05_Paper",
+   "dim": [
+    0.2689,
+    1.0,
+    1.4399
+   ],
+   "zmin": 0.8503,
+   "mods": [],
+   "mats": [
+    "MAT_Poster_Bank"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_05_Headline",
+   "dim": [
+    0.0173,
+    0.7325,
+    0.0651
+   ],
+   "zmin": 1.8221,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Black"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Poster_Plat_05_Subline",
+   "dim": [
+    0.0012,
+    0.2026,
+    0.0218
+   ],
+   "zmin": 1.0992,
+   "mods": [],
+   "mats": [
+    "MAT_Print_Black"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_0_Board",
+   "dim": [
+    0.2227,
+    1.95,
+    1.3391
+   ],
+   "zmin": 0.7599,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_0_Ring",
+   "dim": [
+    0.1899,
+    1.16,
+    1.1504
+   ],
+   "zmin": 0.851,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_Red"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_0_Bar",
+   "dim": [
+    0.0485,
+    1.62,
+    0.2491
+   ],
+   "zmin": 1.2998,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_Blue"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_0_Name",
+   "dim": [
+    0.0175,
+    1.1978,
+    0.1177
+   ],
+   "zmin": 1.3713,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_0_Brackets",
+   "dim": [
+    0.291,
+    1.44,
+    1.0493
+   ],
+   "zmin": 0.9151,
+   "mods": [],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_1_Board",
+   "dim": [
+    0.2227,
+    1.95,
+    1.3391
+   ],
+   "zmin": 0.7599,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_1_Ring",
+   "dim": [
+    0.1899,
+    1.16,
+    1.1504
+   ],
+   "zmin": 0.851,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_Red"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_1_Bar",
+   "dim": [
+    0.0485,
+    1.62,
+    0.2491
+   ],
+   "zmin": 1.2998,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_Blue"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_1_Name",
+   "dim": [
+    0.0175,
+    1.1978,
+    0.1177
+   ],
+   "zmin": 1.3713,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_1_Brackets",
+   "dim": [
+    0.291,
+    1.44,
+    1.0493
+   ],
+   "zmin": 0.9151,
+   "mods": [],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_2_Board",
+   "dim": [
+    0.2227,
+    1.95,
+    1.3391
+   ],
+   "zmin": 0.7599,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_2_Ring",
+   "dim": [
+    0.1899,
+    1.16,
+    1.1504
+   ],
+   "zmin": 0.851,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_Red"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_2_Bar",
+   "dim": [
+    0.0485,
+    1.62,
+    0.2491
+   ],
+   "zmin": 1.2998,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_Blue"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_2_Name",
+   "dim": [
+    0.0175,
+    1.1978,
+    0.1177
+   ],
+   "zmin": 1.3713,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Track_2_Brackets",
+   "dim": [
+    0.291,
+    1.44,
+    1.0493
+   ],
+   "zmin": 0.9151,
+   "mods": [],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_0_Board",
+   "dim": [
+    0.2118,
+    1.56,
+    1.068
+   ],
+   "zmin": 0.9952,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_0_Ring",
+   "dim": [
+    0.1806,
+    0.928,
+    0.9174
+   ],
+   "zmin": 1.0666,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_Red"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_0_Bar",
+   "dim": [
+    0.0465,
+    1.296,
+    0.1991
+   ],
+   "zmin": 1.4236,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_Blue"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_0_Name",
+   "dim": [
+    0.0165,
+    0.9583,
+    0.0938
+   ],
+   "zmin": 1.4804,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_0_Brackets",
+   "dim": [
+    0.2638,
+    1.16,
+    0.8481
+   ],
+   "zmin": 1.1156,
+   "mods": [],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_1_Board",
+   "dim": [
+    0.2118,
+    1.56,
+    1.068
+   ],
+   "zmin": 0.9952,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_1_Ring",
+   "dim": [
+    0.1806,
+    0.928,
+    0.9174
+   ],
+   "zmin": 1.0666,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_Red"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_1_Bar",
+   "dim": [
+    0.0465,
+    1.296,
+    0.1991
+   ],
+   "zmin": 1.4236,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Enamel_Blue"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_1_Name",
+   "dim": [
+    0.0165,
+    0.9583,
+    0.0938
+   ],
+   "zmin": 1.4804,
+   "mods": [],
+   "mats": [
+    "MAT_Enamel_White"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Roundel_Plat_1_Brackets",
+   "dim": [
+    0.2638,
+    1.16,
+    0.8481
+   ],
+   "zmin": 1.1156,
+   "mods": [],
+   "mats": [
+    "MAT_CastIron_Chair"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "DepartureBoard_Housing",
+   "dim": [
+    1.7,
+    0.12,
+    0.4
+   ],
+   "zmin": 2.55,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Board_Housing"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "DepartureBoard_Rods",
+   "dim": [
+    1.224,
+    0.024,
+    1.6904
+   ],
+   "zmin": 2.95,
+   "mods": [],
+   "mats": [
+    "MAT_CableTray_Galv"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "DepartureBoard_Line0",
+   "dim": [
+    0.8339,
+    0.0,
+    0.0645
+   ],
+   "zmin": 2.8029,
+   "mods": [],
+   "mats": [
+    "MAT_DotMatrix_Amber"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "DepartureBoard_Line1",
+   "dim": [
+    0.7024,
+    0.0,
+    0.0654
+   ],
+   "zmin": 2.7129,
+   "mods": [],
+   "mats": [
+    "MAT_DotMatrix_Amber"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "DepartureBoard_Line2",
+   "dim": [
+    0.8623,
+    0.0,
+    0.0385
+   ],
+   "zmin": 2.628,
+   "mods": [],
+   "mats": [
+    "MAT_DotMatrix_Amber"
+   ],
+   "col": [
+    "Signage"
+   ]
+  },
+  {
+   "n": "Light_Plat_00_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_00_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_00_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_00_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_01_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_01_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_01_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_01_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_02_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_02_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_02_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_02_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_03_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_03_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_03_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_03_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_04_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_04_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_04_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_04_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_05_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_05_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_05_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_05_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_06_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_06_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_06_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_06_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_07_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_07_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_07_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_07_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Dead"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_08_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_08_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_08_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_08_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_09_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_09_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_09_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_09_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_10_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_10_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.7195,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Failing"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_10_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.5383
+   ],
+   "zmin": 3.97,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Track_10_Diffuser",
+   "dim": [
+    0.17,
+    1.44,
+    0.025
+   ],
+   "zmin": 3.9495,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Diffuser_Lit"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  },
+  {
+   "n": "Light_Plat_11_Housing",
+   "dim": [
+    0.24,
+    1.55,
+    0.6525
+   ],
+   "zmin": 3.74,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_LightHousing_Paint"
+   ],
+   "col": [
+    "Lighting"
+   ]
+  }
+ ],
+ "n_objects_listed": 150
+}

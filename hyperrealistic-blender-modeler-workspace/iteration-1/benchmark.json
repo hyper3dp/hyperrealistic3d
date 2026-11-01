@@ -1,0 +1,766 @@
+{
+  "metadata": {
+    "skill_name": "hyperrealistic-blender-modeler",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-11-01T09:10:46Z",
+    "evals_run": [
+      "ambiguous-coffee-mug",
+      "rainy-street-fire-hydrant",
+      "underground-station-platform",
+      "vintage-brass-pocket-watch"
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": "ambiguous-coffee-mug",
+      "eval_name": "ambiguous-coffee-mug",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 14,
+        "failed": 0,
+        "total": 14,
+        "time_seconds": 463.0,
+        "tokens": 108140,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+          "passed": true,
+          "evidence": "coffee_mug.blend exists. Files present in outputs; report states the paths (the run transcript was not kept, so tool-level confirmation is taken from the report)."
+        },
+        {
+          "text": "A final rendered image file exists and Blender output confirmed it was written",
+          "passed": true,
+          "evidence": "final_render.png exists; report says size (1.98 MB) was checked after the render finished."
+        },
+        {
+          "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+          "passed": true,
+          "evidence": "CYCLES, AgX, Medium High Contrast."
+        },
+        {
+          "text": "All visible mesh objects have a material assigned",
+          "passed": true,
+          "evidence": "No mesh without a material."
+        },
+        {
+          "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+          "passed": true,
+          "evidence": "Collections Model_CoffeeMug/Environment/Lights/Cameras; CAM_Hero; MAT_ prefixes."
+        },
+        {
+          "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+          "passed": true,
+          "evidence": "MAT_Ceramic_SpeckledGlaze roughness linked (29 nodes)."
+        },
+        {
+          "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+          "passed": true,
+          "evidence": "Body revolved with rounded rim/foot; handle has a Bevel/rounded profile; report: edges softened."
+        },
+        {
+          "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+          "passed": true,
+          "evidence": "Report: audit script run; only flagged hidden handle end faces; checked floating/sinking/materials/scale."
+        },
+        {
+          "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+          "passed": true,
+          "evidence": "Report flags the non-physical coffee reflectivity tweak and low-visibility details."
+        },
+        {
+          "text": "The response states its assumptions (mug style, size, material or setting) instead of asking clarifying questions and stopping",
+          "passed": true,
+          "evidence": "Report opens with 'What I assumed': 11 oz stoneware, black coffee, oiled wood, studio light."
+        },
+        {
+          "text": "The mug is between 0.07 m and 0.13 m tall",
+          "passed": true,
+          "evidence": "Mug_Body 95.4 mm tall."
+        },
+        {
+          "text": "The mug has a handle attached to the body",
+          "passed": true,
+          "evidence": "Mug_Handle attached and parented to the body."
+        },
+        {
+          "text": "The mug has real wall thickness (hollow interior), not a solid cylinder",
+          "passed": true,
+          "evidence": "4 mm wall, hollow interior with coffee 15 mm below rim."
+        },
+        {
+          "text": "The mug material is a glossy ceramic glaze (low roughness or coat layer)",
+          "passed": true,
+          "evidence": "Glossy speckled glaze with node-driven roughness; clear specular highlights in render."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "rainy-street-fire-hydrant",
+      "eval_name": "rainy-street-fire-hydrant",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 14,
+        "failed": 0,
+        "total": 14,
+        "time_seconds": 786.6,
+        "tokens": 148669,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+          "passed": true,
+          "evidence": "fire_hydrant_wet_sidewalk_dusk.blend exists; report: Blender confirmed both files exist."
+        },
+        {
+          "text": "A final rendered image file exists and Blender output confirmed it was written",
+          "passed": true,
+          "evidence": "final_render.png 1920x1080 exists."
+        },
+        {
+          "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+          "passed": true,
+          "evidence": "CYCLES, AgX, Medium High Contrast."
+        },
+        {
+          "text": "All visible mesh objects have a material assigned",
+          "passed": true,
+          "evidence": "No mesh without a material."
+        },
+        {
+          "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+          "passed": true,
+          "evidence": "Collections Model_FireHydrant/Environment/Lights/Cameras; no default names; MAT_ prefixes."
+        },
+        {
+          "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+          "passed": true,
+          "evidence": "MAT_Hydrant_PeelingPaint: 43 nodes, roughness and coat linked."
+        },
+        {
+          "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+          "passed": true,
+          "evidence": "35 of 40 meshes carry Bevel modifiers."
+        },
+        {
+          "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+          "passed": true,
+          "evidence": "Report: audit script run, 7 test-render rounds, hydrant re-seated off a slab joint, back-angle check."
+        },
+        {
+          "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+          "passed": true,
+          "evidence": "Report has a specific weak-spots list (flat windows, puddles reading as blotches, rust heavier than asked)."
+        },
+        {
+          "text": "The hydrant is between 0.5 m and 1.0 m tall",
+          "passed": true,
+          "evidence": "Hydrant_Body height 0.693 m (0.735 m with operating nut)."
+        },
+        {
+          "text": "Render resolution is 1920x1080 at 100%",
+          "passed": true,
+          "evidence": "Render resolution 1920x1080 at 100%."
+        },
+        {
+          "text": "The hydrant material mixes red paint with a rust or bare-metal layer through a mask (peeling paint)",
+          "passed": true,
+          "evidence": "Peeling masks reveal tan primer and rust; visible in render."
+        },
+        {
+          "text": "The ground material has wet-look roughness variation with puddle areas of low roughness",
+          "passed": true,
+          "evidence": "MAT_Concrete_Wet / MAT_Asphalt_Wet: puddle masks drive near-zero roughness; reflections visible."
+        },
+        {
+          "text": "Lighting reads as dusk (low or set sun, warm/blue tones, or street-light style lights)",
+          "passed": true,
+          "evidence": "Nishita-style sky with sun -1.5 deg plus 35 sodium street lamps."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "underground-station-platform",
+      "eval_name": "underground-station-platform",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.909,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 1297.3,
+        "tokens": 193421,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The platform tunnel is built at real scale: vault diameter roughly 6-8 m and the platform at least 60 m long",
+          "passed": false,
+          "evidence": "Vault 8.1 m wide x 6.3 m high is right, but the modelled platform (Platform_Slab, Vault_TiledShell) is only 51 m long; real deep-tube platforms are ~110-130 m and the skill's own reference says so. The report states '51 m modelled length' without flagging it as a shortcut."
+        },
+        {
+          "text": "Repeated elements (wall bays, lights, benches or posters) are instances or linked duplicates rather than separate full copies",
+          "passed": true,
+          "evidence": "57 instances in the evaluated scene; benches are collection instances of KIT_Bench_A/B; fittings built from KIT_Modules."
+        },
+        {
+          "text": "Repeated modules have visible variation (at least two variants or randomized transforms/material per instance)",
+          "passed": true,
+          "evidence": "Two bench variants (one missing a slat), random offsets/rotations, per-fitting colour temperature 4100-4700 K, one dead and one failing fitting."
+        },
+        {
+          "text": "Wall tiles show per-tile variation and grout (not a single flat color)",
+          "passed": true,
+          "evidence": "Brick-texture tile shader with per-tile value/hue, odd replacement tiles, recessed grout; visible in render."
+        },
+        {
+          "text": "Grime is placed by physical logic (e.g. dirt near the floor, soot near ceiling or tunnel mouth, streaks) rather than uniform noise",
+          "passed": true,
+          "evidence": "Floor-up dirt, brake dust rising from trackbed, crown soot, soot fan at tunnel mouth, drip streaks, polished walking path."
+        },
+        {
+          "text": "The track includes running rails, sleepers and conductor rail(s)",
+          "passed": true,
+          "evidence": "Bullhead running rails, cast-iron chairs (Array), positive and negative conductor rails on insulator pots, pit; sleepers in tunnel section."
+        },
+        {
+          "text": "Lighting comes from multiple practical light fittings along the platform backed by actual lights, not only a world color or single sun",
+          "passed": true,
+          "evidence": "34 lights: 32 strip fittings each with an area light inside an emissive diffuser, plus signal and bulkheads."
+        },
+        {
+          "text": "The camera is at roughly eye height (1.3-1.8 m) looking along the platform toward the tunnel, with vertical lines kept vertical",
+          "passed": true,
+          "evidence": "CAM_Hero at z=1.65 m, X rotation 90.0 deg (level), 28 mm, looking down the platform at the tunnel mouth."
+        },
+        {
+          "text": "Signage uses an invented station name or generic style rather than tracing exact trademarked logos, or the report states this choice",
+          "passed": true,
+          "evidence": "Invented 'HALLAM CROSS' name, roundel-style boards (not the trademark), invented poster brands; stated in report."
+        },
+        {
+          "text": "A Cycles render file and a .blend were written and confirmed by tool output",
+          "passed": true,
+          "evidence": "underground_station_platform.blend and 1920x1080 final_render.png exist; report notes Blender saved them (built headless because the MCP link was down)."
+        },
+        {
+          "text": "The final report gives honest known flaws and scene stats or performance notes",
+          "passed": true,
+          "evidence": "Report lists ~326k triangles, render time 104 s, audit result, and a specific limitations list."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "vintage-brass-pocket-watch",
+      "eval_name": "vintage-brass-pocket-watch",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.933,
+        "passed": 14,
+        "failed": 1,
+        "total": 15,
+        "time_seconds": 1139.4,
+        "tokens": 161787,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+          "passed": true,
+          "evidence": "vintage_brass_pocket_watch.blend exists; report: 'Blender confirmed this path after saving'."
+        },
+        {
+          "text": "A final rendered image file exists and Blender output confirmed it was written",
+          "passed": true,
+          "evidence": "final_render.png (1800x1200) exists; report says Blender confirmed the render."
+        },
+        {
+          "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+          "passed": true,
+          "evidence": "engine CYCLES, view transform AgX, look 'AgX - Medium High Contrast'."
+        },
+        {
+          "text": "All visible mesh objects have a material assigned",
+          "passed": true,
+          "evidence": "No renderable mesh/curve/text without a material."
+        },
+        {
+          "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+          "passed": true,
+          "evidence": "Collections Model_PocketWatch/Environment/Lights/Cameras; no default object names; materials prefixed MAT_."
+        },
+        {
+          "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+          "passed": true,
+          "evidence": "MAT_Brass_Aged roughness is node-driven (30-node graph), as are enamel and glass."
+        },
+        {
+          "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+          "passed": true,
+          "evidence": "6 objects carry Bevel modifiers; case parts are revolved profiles with rounded edges."
+        },
+        {
+          "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+          "passed": true,
+          "evidence": "Report: ran scripts/scene_audit.py, fixed T-bar/jump-ring grounding and flat roughness, several test-render rounds."
+        },
+        {
+          "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+          "passed": true,
+          "evidence": "Report lists confirmed paths and a detailed known-flaws section."
+        },
+        {
+          "text": "The watch case diameter is between 0.035 m and 0.065 m (real-world scale)",
+          "passed": true,
+          "evidence": "Case_Band is 51.3 mm across."
+        },
+        {
+          "text": "The dial has twelve hour markers as Roman numerals (geometry, text objects or texture)",
+          "passed": false,
+          "evidence": "Dial shows 11 Roman numerals: VI is deliberately omitted for the sub-seconds dial (traditional design), so not twelve."
+        },
+        {
+          "text": "A chain made of links or a link-like curve is present and lies on the table",
+          "passed": true,
+          "evidence": "Chain_Links (~60 links) lies flat on the table in the render."
+        },
+        {
+          "text": "The brass material has metallic 1.0 and a warm yellow base color",
+          "passed": true,
+          "evidence": "MAT_Brass_Aged metallic 1.0 with warm yellow node-driven color."
+        },
+        {
+          "text": "The table material shows wood grain (procedural or image texture) rather than a flat color",
+          "passed": true,
+          "evidence": "MAT_Walnut_Oiled: 25-node grain graph; grain visible in render."
+        },
+        {
+          "text": "The camera has depth of field enabled and is framed as a close-up on the watch",
+          "passed": true,
+          "evidence": "CAM_Hero 100 mm, DOF on at f/8 focused on the dial; tight framing."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ambiguous-coffee-mug",
+      "eval_name": "ambiguous-coffee-mug",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.714,
+        "passed": 10,
+        "failed": 4,
+        "total": 14,
+        "time_seconds": 235.2,
+        "tokens": 68258,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+          "passed": true,
+          "evidence": "coffee_mug.blend exists. Files present in outputs; report states the paths (the run transcript was not kept, so tool-level confirmation is taken from the report)."
+        },
+        {
+          "text": "A final rendered image file exists and Blender output confirmed it was written",
+          "passed": true,
+          "evidence": "final_render.png exists (preview.png also left in outputs)."
+        },
+        {
+          "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+          "passed": true,
+          "evidence": "CYCLES, AgX, Medium High Contrast."
+        },
+        {
+          "text": "All visible mesh objects have a material assigned",
+          "passed": true,
+          "evidence": "No mesh without a material."
+        },
+        {
+          "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+          "passed": false,
+          "evidence": "No collections; camera named 'Camera'; materials named generically."
+        },
+        {
+          "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+          "passed": false,
+          "evidence": "Hero Ceramic_Glaze roughness is a flat 0.18 constant (only the wood is node-driven)."
+        },
+        {
+          "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+          "passed": true,
+          "evidence": "No Bevel modifiers, but the revolved profile has a rounded lip and soft edges in render."
+        },
+        {
+          "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+          "passed": false,
+          "evidence": "Only a single low-res preview render; no audit or multi-angle check mentioned."
+        },
+        {
+          "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+          "passed": true,
+          "evidence": "Report names limitations (procedural wood, no steam/wear/foot ring)."
+        },
+        {
+          "text": "The response states its assumptions (mug style, size, material or setting) instead of asking clarifying questions and stopping",
+          "passed": false,
+          "evidence": "Report describes the result ('a standard 11 oz mug') but does not present its choices as assumptions."
+        },
+        {
+          "text": "The mug is between 0.07 m and 0.13 m tall",
+          "passed": true,
+          "evidence": "Mug_Body 96.2 mm tall."
+        },
+        {
+          "text": "The mug has a handle attached to the body",
+          "passed": true,
+          "evidence": "Mug_Handle present, ends sunk into wall."
+        },
+        {
+          "text": "The mug has real wall thickness (hollow interior), not a solid cylinder",
+          "passed": true,
+          "evidence": "Report: real wall thickness and inner floor."
+        },
+        {
+          "text": "The mug material is a glossy ceramic glaze (low roughness or coat layer)",
+          "passed": true,
+          "evidence": "Ceramic_Glaze roughness 0.18 with coat 0.7: glossy."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "rainy-street-fire-hydrant",
+      "eval_name": "rainy-street-fire-hydrant",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.929,
+        "passed": 13,
+        "failed": 1,
+        "total": 14,
+        "time_seconds": 369.7,
+        "tokens": 89808,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+          "passed": true,
+          "evidence": "fire_hydrant.blend exists. Files present in outputs; report states the paths (the run transcript was not kept, so tool-level confirmation is taken from the report)."
+        },
+        {
+          "text": "A final rendered image file exists and Blender output confirmed it was written",
+          "passed": true,
+          "evidence": "final_render.png 1920x1080 exists; report says the image was checked after writing."
+        },
+        {
+          "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+          "passed": true,
+          "evidence": "CYCLES, AgX, Medium High Contrast."
+        },
+        {
+          "text": "All visible mesh objects have a material assigned",
+          "passed": true,
+          "evidence": "No mesh without a material."
+        },
+        {
+          "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+          "passed": false,
+          "evidence": "No collections; 117 objects loose in the scene root; camera named 'Camera'."
+        },
+        {
+          "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+          "passed": true,
+          "evidence": "Hydrant_PeelingPaint: 51-node graph with linked roughness/metal/coat."
+        },
+        {
+          "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+          "passed": true,
+          "evidence": "61 of 117 objects bevelled."
+        },
+        {
+          "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+          "passed": true,
+          "evidence": "Transcript shows 6 view-angle screenshots and 2 test renders before the final."
+        },
+        {
+          "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+          "passed": true,
+          "evidence": "Report lists files and limitations (no rain, milky concrete, empty left side)."
+        },
+        {
+          "text": "The hydrant is between 0.5 m and 1.0 m tall",
+          "passed": true,
+          "evidence": "Hydrant_Body height 0.734 m."
+        },
+        {
+          "text": "Render resolution is 1920x1080 at 100%",
+          "passed": true,
+          "evidence": "Render resolution 1920x1080 at 100%."
+        },
+        {
+          "text": "The hydrant material mixes red paint with a rust or bare-metal layer through a mask (peeling paint)",
+          "passed": true,
+          "evidence": "Noise masks peel paint to primer/iron with rust; visible in render."
+        },
+        {
+          "text": "The ground material has wet-look roughness variation with puddle areas of low roughness",
+          "passed": true,
+          "evidence": "WetConcrete puddle mask with mirror-smooth puddles; reflection under hydrant."
+        },
+        {
+          "text": "Lighting reads as dusk (low or set sun, warm/blue tones, or street-light style lights)",
+          "passed": true,
+          "evidence": "Orange-to-blue gradient sky plus sodium spot lamps."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "underground-station-platform",
+      "eval_name": "underground-station-platform",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.909,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 513.0,
+        "tokens": 117351,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The platform tunnel is built at real scale: vault diameter roughly 6-8 m and the platform at least 60 m long",
+          "passed": false,
+          "evidence": "Tube is 7.2 m across (right), but the Platform object is only 57 m long; real deep-tube platforms are ~110-130 m. Not flagged as a shortcut."
+        },
+        {
+          "text": "Repeated elements (wall bays, lights, benches or posters) are instances or linked duplicates rather than separate full copies",
+          "passed": true,
+          "evidence": "36 instances in the evaluated scene (luminaires and repeated fittings)."
+        },
+        {
+          "text": "Repeated modules have visible variation (at least two variants or randomized transforms/material per instance)",
+          "passed": true,
+          "evidence": "13 distinct platform posters and 9 cross-track posters, one dead and one dimmed fitting; benches themselves are identical."
+        },
+        {
+          "text": "Wall tiles show per-tile variation and grout (not a single flat color)",
+          "passed": true,
+          "evidence": "Procedural brick-bond tile shader with per-tile colour variation, mortar bump and dirty grout; visible in render."
+        },
+        {
+          "text": "Grime is placed by physical logic (e.g. dirt near the floor, soot near ceiling or tunnel mouth, streaks) rather than uniform noise",
+          "passed": true,
+          "evidence": "Brake-dust-blackened lower track-side walls, smoke-darkened crown, drip streaks, leak stains, darker corners."
+        },
+        {
+          "text": "The track includes running rails, sleepers and conductor rail(s)",
+          "passed": true,
+          "evidence": "Bullhead rails, timber sleepers, drainage pit, centre and outside conductor rails on insulators."
+        },
+        {
+          "text": "Lighting comes from multiple practical light fittings along the platform backed by actual lights, not only a world color or single sun",
+          "passed": true,
+          "evidence": "28 area lights inside suspended luminaire housings in two rows."
+        },
+        {
+          "text": "The camera is at roughly eye height (1.3-1.8 m) looking along the platform toward the tunnel, with vertical lines kept vertical",
+          "passed": true,
+          "evidence": "Camera at 1.62 m, X rotation 89.5 deg (near level), 26 mm, looking down the platform at the tunnel mouth."
+        },
+        {
+          "text": "Signage uses an invented station name or generic style rather than tracing exact trademarked logos, or the report states this choice",
+          "passed": true,
+          "evidence": "Fictional 'ALDER CROSS' roundel-style boards and invented poster graphics."
+        },
+        {
+          "text": "A Cycles render file and a .blend were written and confirmed by tool output",
+          "passed": true,
+          "evidence": "underground_station_platform.blend and 1920x1080 final_render.png exist in outputs."
+        },
+        {
+          "text": "The final report gives honest known flaws and scene stats or performance notes",
+          "passed": true,
+          "evidence": "Report gives render time (2m15s) and a specific limitations list; no triangle/memory stats but performance noted."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "vintage-brass-pocket-watch",
+      "eval_name": "vintage-brass-pocket-watch",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.867,
+        "passed": 13,
+        "failed": 2,
+        "total": 15,
+        "time_seconds": 424.0,
+        "tokens": 91771,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+          "passed": true,
+          "evidence": "vintage_brass_pocket_watch.blend exists. Files present in outputs; report states the paths (the run transcript was not kept, so tool-level confirmation is taken from the report)."
+        },
+        {
+          "text": "A final rendered image file exists and Blender output confirmed it was written",
+          "passed": true,
+          "evidence": "final_render.png (1600x1200) exists."
+        },
+        {
+          "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+          "passed": true,
+          "evidence": "engine CYCLES, AgX, Medium High Contrast."
+        },
+        {
+          "text": "All visible mesh objects have a material assigned",
+          "passed": true,
+          "evidence": "Only Chain_Path (non-rendering guide curve) lacks a material."
+        },
+        {
+          "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+          "passed": false,
+          "evidence": "No collections at all (everything in the scene root); camera still named 'Camera'."
+        },
+        {
+          "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+          "passed": true,
+          "evidence": "Brass_Aged roughness is node-driven (17 nodes)."
+        },
+        {
+          "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+          "passed": true,
+          "evidence": "12 of 29 objects have Bevel modifiers."
+        },
+        {
+          "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+          "passed": false,
+          "evidence": "Report mentions no audit, multi-angle inspection or fix cycle."
+        },
+        {
+          "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+          "passed": true,
+          "evidence": "Report lists files and names weak spots (clean brass, streaky walnut, garbled maker text)."
+        },
+        {
+          "text": "The watch case diameter is between 0.035 m and 0.065 m (real-world scale)",
+          "passed": true,
+          "evidence": "Case_Body is 50.8 mm across."
+        },
+        {
+          "text": "The dial has twelve hour markers as Roman numerals (geometry, text objects or texture)",
+          "passed": true,
+          "evidence": "Render shows a full set of Roman numerals including VI."
+        },
+        {
+          "text": "A chain made of links or a link-like curve is present and lies on the table",
+          "passed": true,
+          "evidence": "Watch_Chain lies on the table in the render."
+        },
+        {
+          "text": "The brass material has metallic 1.0 and a warm yellow base color",
+          "passed": true,
+          "evidence": "Brass_Aged metallic 1.0, warm linked base color."
+        },
+        {
+          "text": "The table material shows wood grain (procedural or image texture) rather than a flat color",
+          "passed": true,
+          "evidence": "Walnut_Wood has a 15-node grain graph; grain visible (streaky)."
+        },
+        {
+          "text": "The camera has depth of field enabled and is framed as a close-up on the watch",
+          "passed": true,
+          "evidence": "Camera 90 mm, DOF on at f/6.3, close framing."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9605,
+        "stddev": 0.0467,
+        "min": 0.909,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 921.575,
+        "stddev": 372.8835,
+        "min": 463.0,
+        "max": 1297.3
+      },
+      "tokens": {
+        "mean": 153004.25,
+        "stddev": 35318.766,
+        "min": 108140,
+        "max": 193421
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8548,
+        "stddev": 0.0973,
+        "min": 0.714,
+        "max": 0.929
+      },
+      "time_seconds": {
+        "mean": 385.475,
+        "stddev": 116.3017,
+        "min": 235.2,
+        "max": 513.0
+      },
+      "tokens": {
+        "mean": 91797.0,
+        "stddev": 20091.8577,
+        "min": 68258,
+        "max": 117351
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.11",
+      "time_seconds": "+536.1",
+      "tokens": "+61207"
+    }
+  },
+  "notes": [
+    "Biggest skill effect is on process and organisation, not raw model quality: every baseline run skipped collections/descriptive names (failed in 4/4) and 2/4 skipped any QA pass, while all skill runs did both.",
+    "Mug is the most discriminating case (14/14 vs 10/14): baseline left flat roughness on the hero glaze, no QA, and did not frame its choices as assumptions.",
+    "Non-discriminating assertions: render engine/AgX, render file exists, materials assigned, Roman numerals scale, hydrant height, rails/track parts - both configurations pass them every time. Visual quality differences (hydrant scene depth, watch inscription) are better judged in the Outputs tab than by these checks.",
+    "Station case ties at 10/11: both runs built a shortened platform (51 m and 57 m vs ~110-130 m real). The skill version now explicitly says to keep full length via instancing and to flag any shortcut.",
+    "Watch with-skill 'failure' on twelve numerals is debatable: it omitted VI for the sub-seconds dial, which is period-correct. Consider rewording that assertion.",
+    "Cost: skill runs took ~2-3x longer and ~1.6-2x the tokens (e.g. watch 19 min vs 7 min), spent on test-render iterations and the audit pass.",
+    "Caveats: the station runs were built headless because the live Blender MCP connection dropped; the station baseline was interrupted by a usage limit and resumed, so its timing covers only the resumed part. Hydrant with-skill may have read partly-updated skill files mid-run. Mug/hydrant baselines and later runs used a snapshot of the original skill (skill-snapshot-v1); the station with-skill run used the updated skill."
+  ]
+}

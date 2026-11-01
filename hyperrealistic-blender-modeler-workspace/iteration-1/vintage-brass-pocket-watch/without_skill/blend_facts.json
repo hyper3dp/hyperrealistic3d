@@ -1,0 +1,661 @@
+{
+ "engine": "CYCLES",
+ "vt": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "res": [
+  1600,
+  1200,
+  100
+ ],
+ "samples": 256,
+ "n_obj": 35,
+ "nomat": [
+  "Chain_Path"
+ ],
+ "defaults": [
+  "Camera"
+ ],
+ "n_bevelled": 12,
+ "n_mesh": 29,
+ "collections": {},
+ "materials": {
+  "Blued_Steel": {
+   "base": [
+    0.03,
+    0.06,
+    0.25
+   ],
+   "metal": 1.0,
+   "rough": 0.15,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Brass_Aged": {
+   "base": "linked",
+   "metal": 1.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 17,
+   "types": [
+    "AMBIENT_OCCLUSION",
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_WAVE",
+    "VALTORGB"
+   ]
+  },
+  "Crystal_Glass": {
+   "base": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "metal": 0.0,
+   "rough": 0.0,
+   "coat": 0.0,
+   "trans": 1.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Dial_Print": {
+   "base": [
+    0.012,
+    0.012,
+    0.012
+   ],
+   "metal": 0.0,
+   "rough": 0.3,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Enamel_Dial": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": 0.35,
+   "coat": 1.0,
+   "trans": 0.0,
+   "nodes": 7,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_VORONOI",
+    "VALTORGB"
+   ]
+  },
+  "Walnut_Wood": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.25,
+   "trans": 0.0,
+   "nodes": 15,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_WAVE",
+    "VALTORGB"
+   ]
+  }
+ },
+ "camera": {
+  "name": "Camera",
+  "lens": 90.0,
+  "dof": true,
+  "fstop": 6.3,
+  "z": 0.22,
+  "rot_deg": [
+   56.8,
+   -0.0,
+   11.2
+  ],
+  "shift_y": 0.0
+ },
+ "n_lights": 3,
+ "lights": [
+  [
+   "Key_Softbox",
+   "AREA",
+   5.0
+  ],
+  [
+   "Rim_Strip",
+   "AREA",
+   3.0
+  ],
+  [
+   "Fill_Card",
+   "AREA",
+   0.5
+  ]
+ ],
+ "instances": 0,
+ "shared_meshes": 0,
+ "world": [
+  "BACKGROUND",
+  "OUTPUT_WORLD"
+ ],
+ "objects": [
+  {
+   "n": "Walnut_Table",
+   "dim": [
+    0.8,
+    0.6,
+    0.04
+   ],
+   "zmin": -0.04,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Walnut_Wood"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Case_Body",
+   "dim": [
+    0.0508,
+    0.0508,
+    0.0103
+   ],
+   "zmin": 0.0005,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Enamel_Dial",
+   "dim": [
+    0.0454,
+    0.0454,
+    0.0004
+   ],
+   "zmin": 0.0084,
+   "mods": [],
+   "mats": [
+    "Enamel_Dial"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Crystal",
+   "dim": [
+    0.0458,
+    0.0458,
+    0.0023
+   ],
+   "zmin": 0.0097,
+   "mods": [],
+   "mats": [
+    "Crystal_Glass"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Case_Lid",
+   "dim": [
+    0.0201,
+    0.051,
+    0.0499
+   ],
+   "zmin": 0.0095,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hinge_Knuckle_0",
+   "dim": [
+    0.0022,
+    0.0038,
+    0.0022
+   ],
+   "zmin": 0.0095,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hinge_Knuckle_1",
+   "dim": [
+    0.0028,
+    0.0029,
+    0.0028
+   ],
+   "zmin": 0.0092,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hinge_Knuckle_2",
+   "dim": [
+    0.0022,
+    0.0038,
+    0.0022
+   ],
+   "zmin": 0.0095,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Pendant_Neck",
+   "dim": [
+    0.0048,
+    0.005,
+    0.0048
+   ],
+   "zmin": 0.0034,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Pendant_Collar",
+   "dim": [
+    0.006,
+    0.0012,
+    0.006
+   ],
+   "zmin": 0.0028,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Crown_Knurled",
+   "dim": [
+    0.0066,
+    0.0042,
+    0.0066
+   ],
+   "zmin": 0.0025,
+   "mods": [
+    "BEVEL",
+    "SUBSURF"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Crown_Cap",
+   "dim": [
+    0.0036,
+    0.0012,
+    0.0036
+   ],
+   "zmin": 0.004,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bow_Ring",
+   "dim": [
+    0.0163,
+    0.0191,
+    0.0074
+   ],
+   "zmin": 0.0001,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_Jump_Ring",
+   "dim": [
+    0.0076,
+    0.0077,
+    0.0031
+   ],
+   "zmin": -0.0001,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Dial_Numerals",
+   "dim": [
+    0.0351,
+    0.0351,
+    0.0
+   ],
+   "zmin": 0.0088,
+   "mods": [],
+   "mats": [
+    "Dial_Print"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Dial_Minute_Track",
+   "dim": [
+    0.0422,
+    0.0422,
+    0.0
+   ],
+   "zmin": 0.0088,
+   "mods": [],
+   "mats": [
+    "Dial_Print"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hand_Hour",
+   "dim": [
+    0.0126,
+    0.0099,
+    0.0001
+   ],
+   "zmin": 0.009,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Blued_Steel"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hand_Minute",
+   "dim": [
+    0.0178,
+    0.0137,
+    0.0001
+   ],
+   "zmin": 0.0092,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Blued_Steel"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hand_Seconds",
+   "dim": [
+    0.0017,
+    0.0042,
+    0.0001
+   ],
+   "zmin": 0.0089,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Blued_Steel"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hand_Boss",
+   "dim": [
+    0.0018,
+    0.0018,
+    0.0003
+   ],
+   "zmin": 0.009,
+   "mods": [],
+   "mats": [
+    "Blued_Steel"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Hand_Cap",
+   "dim": [
+    0.001,
+    0.001,
+    0.0003
+   ],
+   "zmin": 0.0093,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Seconds_Boss",
+   "dim": [
+    0.0007,
+    0.0007,
+    0.0003
+   ],
+   "zmin": 0.0089,
+   "mods": [],
+   "mats": [
+    "Blued_Steel"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_Path",
+   "dim": [
+    2.106,
+    2.117,
+    2.0002
+   ],
+   "zmin": -0.9984,
+   "mods": [],
+   "mats": [],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Watch_Chain",
+   "dim": [
+    0.109,
+    0.1202,
+    0.003
+   ],
+   "zmin": 0.0002,
+   "mods": [
+    "ARRAY",
+    "CURVE"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "TBar_Ring",
+   "dim": [
+    0.007,
+    0.007,
+    0.0018
+   ],
+   "zmin": -0.0001,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "TBar",
+   "dim": [
+    0.0171,
+    0.0084,
+    0.0014
+   ],
+   "zmin": -0.0,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "TBar_Ball_-1",
+   "dim": [
+    0.0022,
+    0.0022,
+    0.0022
+   ],
+   "zmin": 0.0,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "TBar_Ball_1",
+   "dim": [
+    0.0022,
+    0.0022,
+    0.0022
+   ],
+   "zmin": 0.0,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "TBar_Shank",
+   "dim": [
+    0.0019,
+    0.0028,
+    0.001
+   ],
+   "zmin": 0.0002,
+   "mods": [],
+   "mats": [
+    "Brass_Aged"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  }
+ ],
+ "n_objects_listed": 29
+}

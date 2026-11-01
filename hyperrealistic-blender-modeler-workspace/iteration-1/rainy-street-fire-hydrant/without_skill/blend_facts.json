@@ -1,0 +1,2461 @@
+{
+ "engine": "CYCLES",
+ "vt": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "res": [
+  1920,
+  1080,
+  100
+ ],
+ "samples": 256,
+ "n_obj": 125,
+ "nomat": [],
+ "defaults": [
+  "Camera"
+ ],
+ "n_bevelled": 61,
+ "n_mesh": 117,
+ "collections": {},
+ "materials": {
+  "Bokeh_0": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_1": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_10": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_11": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_12": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_13": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_2": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_3": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_4": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_5": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_6": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_7": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_8": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "Bokeh_9": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "BuildingWindows": {
+   "base": [
+    0.03,
+    0.03,
+    0.035
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 47,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "COMBXYZ",
+    "MATH",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "RGBTOBW",
+    "SEPXYZ",
+    "TEX_WHITE_NOISE",
+    "VALTORGB"
+   ]
+  },
+  "Chain_Rust": {
+   "base": "linked",
+   "metal": 0.5,
+   "rough": 0.55,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 5,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VALTORGB"
+   ]
+  },
+  "Hydrant_PeelingPaint": {
+   "base": "linked",
+   "metal": "linked",
+   "rough": "linked",
+   "coat": "linked",
+   "trans": 0.0,
+   "nodes": 51,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MATH",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "SEPXYZ",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VALTORGB"
+   ]
+  },
+  "LampGlow": {
+   "base": [
+    1.0,
+    0.8,
+    0.6
+   ],
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "PostMetal": {
+   "base": [
+    0.02,
+    0.025,
+    0.02
+   ],
+   "metal": 0.8,
+   "rough": 0.3,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "WetAsphalt": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 29,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_VORONOI",
+    "VALTORGB"
+   ]
+  },
+  "WetBrick": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 10,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MATH",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_BRICK",
+    "TEX_NOISE"
+   ]
+  },
+  "WetConcrete": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 32,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_VORONOI",
+    "VALTORGB"
+   ]
+  },
+  "WetCurb": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 32,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MATH",
+    "MIX",
+    "NEW_GEOMETRY",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_VORONOI",
+    "VALTORGB"
+   ]
+  }
+ },
+ "camera": {
+  "name": "Camera",
+  "lens": 40.0,
+  "dof": true,
+  "fstop": 2.0,
+  "z": 0.3,
+  "rot_deg": [
+   91.0,
+   -0.0,
+   43.2
+  ],
+  "shift_y": 0.0
+ },
+ "n_lights": 5,
+ "lights": [
+  [
+   "StreetLight_0",
+   "SPOT",
+   2500.0
+  ],
+  [
+   "StreetLight_1",
+   "SPOT",
+   1800.0
+  ],
+  [
+   "StreetLight_2",
+   "SPOT",
+   1800.0
+  ],
+  [
+   "SkyFill",
+   "AREA",
+   300.0
+  ],
+  [
+   "ShopGlow",
+   "AREA",
+   60.0
+  ]
+ ],
+ "instances": 0,
+ "shared_meshes": 0,
+ "world": [
+  "BACKGROUND",
+  "MATH",
+  "OUTPUT_WORLD",
+  "SEPXYZ",
+  "TEX_COORD",
+  "VALTORGB"
+ ],
+ "objects": [
+  {
+   "n": "Hydrant_Body",
+   "dim": [
+    0.436,
+    0.436,
+    0.734
+   ],
+   "zmin": 0.0,
+   "mods": [],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "TopNut_Base",
+   "dim": [
+    0.0735,
+    0.0735,
+    0.02
+   ],
+   "zmin": 0.732,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "TopNut",
+   "dim": [
+    0.0634,
+    0.0618,
+    0.035
+   ],
+   "zmin": 0.7475,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideNozzle_0",
+   "dim": [
+    0.1183,
+    0.107,
+    0.084
+   ],
+   "zmin": 0.388,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideRing_0",
+   "dim": [
+    0.0404,
+    0.1005,
+    0.1
+   ],
+   "zmin": 0.38,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideCap_0",
+   "dim": [
+    0.0635,
+    0.1031,
+    0.096
+   ],
+   "zmin": 0.382,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideCapNut_0",
+   "dim": [
+    0.0343,
+    0.0444,
+    0.0411
+   ],
+   "zmin": 0.4095,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideNozzle_1",
+   "dim": [
+    0.1183,
+    0.107,
+    0.084
+   ],
+   "zmin": 0.388,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideRing_1",
+   "dim": [
+    0.0404,
+    0.1005,
+    0.1
+   ],
+   "zmin": 0.38,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideCap_1",
+   "dim": [
+    0.0635,
+    0.1031,
+    0.096
+   ],
+   "zmin": 0.382,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SideCapNut_1",
+   "dim": [
+    0.0343,
+    0.0444,
+    0.0411
+   ],
+   "zmin": 0.4095,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Pumper",
+   "dim": [
+    0.1515,
+    0.1302,
+    0.13
+   ],
+   "zmin": 0.335,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "PumperRing",
+   "dim": [
+    0.1501,
+    0.0581,
+    0.15
+   ],
+   "zmin": 0.325,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "PumperCap",
+   "dim": [
+    0.152,
+    0.0856,
+    0.144
+   ],
+   "zmin": 0.328,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "PumperCapNut",
+   "dim": [
+    0.0619,
+    0.0435,
+    0.0535
+   ],
+   "zmin": 0.3757,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_0",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_1",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_2",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_3",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_4",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_5",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_6",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Bolt_7",
+   "dim": [
+    0.0239,
+    0.0256,
+    0.014
+   ],
+   "zmin": 0.045,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BonnetBolt_0",
+   "dim": [
+    0.0174,
+    0.0185,
+    0.012
+   ],
+   "zmin": 0.576,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BonnetBolt_1",
+   "dim": [
+    0.0174,
+    0.0185,
+    0.012
+   ],
+   "zmin": 0.576,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BonnetBolt_2",
+   "dim": [
+    0.0174,
+    0.0185,
+    0.012
+   ],
+   "zmin": 0.576,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BonnetBolt_3",
+   "dim": [
+    0.0174,
+    0.0185,
+    0.012
+   ],
+   "zmin": 0.576,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BonnetBolt_4",
+   "dim": [
+    0.0174,
+    0.0185,
+    0.012
+   ],
+   "zmin": 0.576,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BonnetBolt_5",
+   "dim": [
+    0.0174,
+    0.0185,
+    0.012
+   ],
+   "zmin": 0.576,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "Hydrant_PeelingPaint"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_0_0",
+   "dim": [
+    0.0302,
+    0.012,
+    0.0301
+   ],
+   "zmin": 0.3699,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_0_1",
+   "dim": [
+    0.027,
+    0.0273,
+    0.0141
+   ],
+   "zmin": 0.3638,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_0_2",
+   "dim": [
+    0.0302,
+    0.012,
+    0.0301
+   ],
+   "zmin": 0.3499,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_0_3",
+   "dim": [
+    0.027,
+    0.0273,
+    0.0141
+   ],
+   "zmin": 0.3638,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_0_4",
+   "dim": [
+    0.0302,
+    0.012,
+    0.0301
+   ],
+   "zmin": 0.3699,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_1_0",
+   "dim": [
+    0.0302,
+    0.012,
+    0.0301
+   ],
+   "zmin": 0.3699,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_1_1",
+   "dim": [
+    0.027,
+    0.0273,
+    0.0141
+   ],
+   "zmin": 0.3638,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_1_2",
+   "dim": [
+    0.0302,
+    0.012,
+    0.0301
+   ],
+   "zmin": 0.3499,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_1_3",
+   "dim": [
+    0.027,
+    0.0273,
+    0.0141
+   ],
+   "zmin": 0.3638,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Chain_1_4",
+   "dim": [
+    0.0302,
+    0.012,
+    0.0301
+   ],
+   "zmin": 0.3699,
+   "mods": [],
+   "mats": [
+    "Chain_Rust"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-5_0",
+   "dim": [
+    1.4882,
+    1.4131,
+    0.1018
+   ],
+   "zmin": -0.1159,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-5_1",
+   "dim": [
+    1.4882,
+    1.4132,
+    0.1028
+   ],
+   "zmin": -0.0857,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-5_2",
+   "dim": [
+    1.4881,
+    1.413,
+    0.1044
+   ],
+   "zmin": -0.1135,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-4_0",
+   "dim": [
+    1.4883,
+    1.4132,
+    0.1036
+   ],
+   "zmin": -0.0886,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-4_1",
+   "dim": [
+    1.4882,
+    1.4132,
+    0.1079
+   ],
+   "zmin": -0.1114,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-4_2",
+   "dim": [
+    1.4882,
+    1.4131,
+    0.1036
+   ],
+   "zmin": -0.0858,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-3_0",
+   "dim": [
+    1.4881,
+    1.4131,
+    0.1055
+   ],
+   "zmin": -0.1032,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-3_1",
+   "dim": [
+    1.4882,
+    1.413,
+    0.1039
+   ],
+   "zmin": -0.1133,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-3_2",
+   "dim": [
+    1.4881,
+    1.413,
+    0.1057
+   ],
+   "zmin": -0.1062,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-2_0",
+   "dim": [
+    1.4882,
+    1.4132,
+    0.1096
+   ],
+   "zmin": -0.1024,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-2_1",
+   "dim": [
+    1.488,
+    1.4131,
+    0.1015
+   ],
+   "zmin": -0.1017,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-2_2",
+   "dim": [
+    1.4883,
+    1.4132,
+    0.104
+   ],
+   "zmin": -0.1036,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-1_0",
+   "dim": [
+    1.488,
+    1.4131,
+    0.0985
+   ],
+   "zmin": -0.0959,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-1_1",
+   "dim": [
+    1.4882,
+    1.4133,
+    0.1067
+   ],
+   "zmin": -0.1028,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_-1_2",
+   "dim": [
+    1.4881,
+    1.4131,
+    0.1024
+   ],
+   "zmin": -0.1018,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_0_0",
+   "dim": [
+    1.488,
+    1.4131,
+    0.1009
+   ],
+   "zmin": -0.0981,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_0_1",
+   "dim": [
+    1.4882,
+    1.4133,
+    0.1094
+   ],
+   "zmin": -0.1099,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_0_2",
+   "dim": [
+    1.4881,
+    1.4132,
+    0.1059
+   ],
+   "zmin": -0.1063,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_1_0",
+   "dim": [
+    1.4881,
+    1.4133,
+    0.1031
+   ],
+   "zmin": -0.1018,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_1_1",
+   "dim": [
+    1.4883,
+    1.4131,
+    0.1093
+   ],
+   "zmin": -0.1084,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_1_2",
+   "dim": [
+    1.4882,
+    1.4133,
+    0.1026
+   ],
+   "zmin": -0.0977,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_2_0",
+   "dim": [
+    1.4882,
+    1.4131,
+    0.1031
+   ],
+   "zmin": -0.1061,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_2_1",
+   "dim": [
+    1.4882,
+    1.413,
+    0.1021
+   ],
+   "zmin": -0.0942,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_2_2",
+   "dim": [
+    1.4883,
+    1.4131,
+    0.1049
+   ],
+   "zmin": -0.0905,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_3_0",
+   "dim": [
+    1.4881,
+    1.4132,
+    0.1
+   ],
+   "zmin": -0.0967,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_3_1",
+   "dim": [
+    1.488,
+    1.4133,
+    0.1031
+   ],
+   "zmin": -0.098,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_3_2",
+   "dim": [
+    1.4882,
+    1.4133,
+    0.1044
+   ],
+   "zmin": -0.0995,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_4_0",
+   "dim": [
+    1.488,
+    1.4133,
+    0.1054
+   ],
+   "zmin": -0.1038,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_4_1",
+   "dim": [
+    1.488,
+    1.4132,
+    0.1015
+   ],
+   "zmin": -0.1,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Slab_4_2",
+   "dim": [
+    1.488,
+    1.4133,
+    0.1065
+   ],
+   "zmin": -0.0971,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "SidewalkBase",
+   "dim": [
+    15.6277,
+    8.1324,
+    0.1
+   ],
+   "zmin": -0.115,
+   "mods": [],
+   "mats": [
+    "WetConcrete"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Curb",
+   "dim": [
+    15.0,
+    0.18,
+    0.17
+   ],
+   "zmin": -0.16,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetCurb"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Gutter",
+   "dim": [
+    15.0,
+    0.35,
+    0.05
+   ],
+   "zmin": -0.21,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetAsphalt"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Road",
+   "dim": [
+    40.0,
+    13.0,
+    0.0
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "WetAsphalt"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_0",
+   "dim": [
+    4.9674,
+    5.0,
+    12.9275
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_1",
+   "dim": [
+    4.1475,
+    5.0,
+    13.0547
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_2",
+   "dim": [
+    4.9943,
+    5.0,
+    18.6716
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_3",
+   "dim": [
+    7.3242,
+    5.0,
+    13.983
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_4",
+   "dim": [
+    4.1266,
+    5.0,
+    11.0527
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_5",
+   "dim": [
+    4.9696,
+    5.0,
+    10.4968
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_6",
+   "dim": [
+    4.9259,
+    5.0,
+    18.4365
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_7",
+   "dim": [
+    4.5668,
+    5.0,
+    8.6153
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Building_8",
+   "dim": [
+    7.7121,
+    5.0,
+    14.7841
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "Wall_Back",
+   "dim": [
+    16.0,
+    0.5,
+    6.0
+   ],
+   "zmin": 0.0,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "WetBrick"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_0",
+   "dim": [
+    5.0,
+    6.852,
+    15.5997
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_1",
+   "dim": [
+    5.0,
+    8.4662,
+    10.0965
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_2",
+   "dim": [
+    5.0,
+    8.5932,
+    11.2122
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_3",
+   "dim": [
+    5.0,
+    7.4666,
+    10.6134
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_4",
+   "dim": [
+    5.0,
+    7.8139,
+    16.7803
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_5",
+   "dim": [
+    5.0,
+    5.6286,
+    13.5702
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_6",
+   "dim": [
+    5.0,
+    7.0251,
+    23.8574
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "FarBldg_7",
+   "dim": [
+    5.0,
+    8.0968,
+    15.755
+   ],
+   "zmin": -0.17,
+   "mods": [],
+   "mats": [
+    "BuildingWindows"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampPost_0",
+   "dim": [
+    0.14,
+    0.14,
+    5.0
+   ],
+   "zmin": 0.0,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampArm_0",
+   "dim": [
+    0.07,
+    1.6,
+    0.07
+   ],
+   "zmin": 4.865,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampHead_0",
+   "dim": [
+    0.36,
+    0.36,
+    0.12
+   ],
+   "zmin": 4.79,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampGlow_0",
+   "dim": [
+    0.3,
+    0.3,
+    0.02
+   ],
+   "zmin": 4.77,
+   "mods": [],
+   "mats": [
+    "LampGlow"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampPost_1",
+   "dim": [
+    0.14,
+    0.14,
+    5.0
+   ],
+   "zmin": 0.0,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampArm_1",
+   "dim": [
+    0.07,
+    1.6,
+    0.07
+   ],
+   "zmin": 4.865,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampHead_1",
+   "dim": [
+    0.36,
+    0.36,
+    0.12
+   ],
+   "zmin": 4.79,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampGlow_1",
+   "dim": [
+    0.3,
+    0.3,
+    0.02
+   ],
+   "zmin": 4.77,
+   "mods": [],
+   "mats": [
+    "LampGlow"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampPost_2",
+   "dim": [
+    0.14,
+    0.14,
+    5.0
+   ],
+   "zmin": 0.0,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampArm_2",
+   "dim": [
+    0.07,
+    1.6,
+    0.07
+   ],
+   "zmin": 4.865,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampHead_2",
+   "dim": [
+    0.36,
+    0.36,
+    0.12
+   ],
+   "zmin": 4.79,
+   "mods": [],
+   "mats": [
+    "PostMetal"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "LampGlow_2",
+   "dim": [
+    0.3,
+    0.3,
+    0.02
+   ],
+   "zmin": 4.77,
+   "mods": [],
+   "mats": [
+    "LampGlow"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_0",
+   "dim": [
+    0.1357,
+    0.1357,
+    0.1357
+   ],
+   "zmin": 2.1747,
+   "mods": [],
+   "mats": [
+    "Bokeh_0"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_1",
+   "dim": [
+    0.1763,
+    0.1763,
+    0.1763
+   ],
+   "zmin": 2.5633,
+   "mods": [],
+   "mats": [
+    "Bokeh_1"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_2",
+   "dim": [
+    0.2233,
+    0.2233,
+    0.2233
+   ],
+   "zmin": 3.1658,
+   "mods": [],
+   "mats": [
+    "Bokeh_2"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_3",
+   "dim": [
+    0.2006,
+    0.2006,
+    0.2006
+   ],
+   "zmin": 2.173,
+   "mods": [],
+   "mats": [
+    "Bokeh_3"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_4",
+   "dim": [
+    0.2188,
+    0.2188,
+    0.2188
+   ],
+   "zmin": 3.1511,
+   "mods": [],
+   "mats": [
+    "Bokeh_4"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_5",
+   "dim": [
+    0.2305,
+    0.2305,
+    0.2305
+   ],
+   "zmin": 1.7186,
+   "mods": [],
+   "mats": [
+    "Bokeh_5"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_6",
+   "dim": [
+    0.1317,
+    0.1317,
+    0.1317
+   ],
+   "zmin": 3.3306,
+   "mods": [],
+   "mats": [
+    "Bokeh_6"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_7",
+   "dim": [
+    0.2226,
+    0.2226,
+    0.2226
+   ],
+   "zmin": 2.1108,
+   "mods": [],
+   "mats": [
+    "Bokeh_7"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_8",
+   "dim": [
+    0.2285,
+    0.2285,
+    0.2285
+   ],
+   "zmin": 2.9549,
+   "mods": [],
+   "mats": [
+    "Bokeh_8"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_9",
+   "dim": [
+    0.1592,
+    0.1592,
+    0.1592
+   ],
+   "zmin": 0.7326,
+   "mods": [],
+   "mats": [
+    "Bokeh_9"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_10",
+   "dim": [
+    0.2386,
+    0.2386,
+    0.2386
+   ],
+   "zmin": 1.8267,
+   "mods": [],
+   "mats": [
+    "Bokeh_10"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_11",
+   "dim": [
+    0.2161,
+    0.2161,
+    0.2161
+   ],
+   "zmin": 1.2736,
+   "mods": [],
+   "mats": [
+    "Bokeh_11"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_12",
+   "dim": [
+    0.1253,
+    0.1253,
+    0.1253
+   ],
+   "zmin": 2.5927,
+   "mods": [],
+   "mats": [
+    "Bokeh_12"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  },
+  {
+   "n": "BokehLight_13",
+   "dim": [
+    0.2306,
+    0.2306,
+    0.2306
+   ],
+   "zmin": 0.4927,
+   "mods": [],
+   "mats": [
+    "Bokeh_13"
+   ],
+   "col": [
+    "Scene Collection"
+   ]
+  }
+ ],
+ "n_objects_listed": 117
+}

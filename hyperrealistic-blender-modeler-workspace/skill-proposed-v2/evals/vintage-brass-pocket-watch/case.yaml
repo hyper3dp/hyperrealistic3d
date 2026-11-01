@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: vintage-brass-pocket-watch
+expected_outcome: |
+  A brass pocket watch with enamel dial, hands, crown and chain is built in Blender at real-world scale on a walnut table, with PBR materials showing wear/variation, a close-up camera with depth of field, Cycles with AgX/Filmic, a QA pass, and a .blend saved in Documents whose path Blender confirmed.

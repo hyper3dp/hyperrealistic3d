@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: rainy-street-fire-hydrant
+expected_outcome: |
+  A fire hydrant on a sidewalk is modeled with peeling paint and rust masks, wet/puddle roughness variation, dusk lighting, a camera, and a 1080p Cycles render whose file existence was confirmed (or an honest report if the render timed out).

@@ -1,0 +1,85 @@
+{
+  "expectations": [
+    {
+      "text": "A .blend file was saved and its path was confirmed by Blender tool output",
+      "passed": true,
+      "evidence": "vintage_brass_pocket_watch.blend exists; report: 'Blender confirmed this path after saving'."
+    },
+    {
+      "text": "A final rendered image file exists and Blender output confirmed it was written",
+      "passed": true,
+      "evidence": "final_render.png (1800x1200) exists; report says Blender confirmed the render."
+    },
+    {
+      "text": "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+      "passed": true,
+      "evidence": "engine CYCLES, view transform AgX, look 'AgX - Medium High Contrast'."
+    },
+    {
+      "text": "All visible mesh objects have a material assigned",
+      "passed": true,
+      "evidence": "No renderable mesh/curve/text without a material."
+    },
+    {
+      "text": "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+      "passed": true,
+      "evidence": "Collections Model_PocketWatch/Environment/Lights/Cameras; no default object names; materials prefixed MAT_."
+    },
+    {
+      "text": "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+      "passed": true,
+      "evidence": "MAT_Brass_Aged roughness is node-driven (30-node graph), as are enamel and glass."
+    },
+    {
+      "text": "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+      "passed": true,
+      "evidence": "6 objects carry Bevel modifiers; case parts are revolved profiles with rounded edges."
+    },
+    {
+      "text": "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+      "passed": true,
+      "evidence": "Report: ran scripts/scene_audit.py, fixed T-bar/jump-ring grounding and flat roughness, several test-render rounds."
+    },
+    {
+      "text": "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+      "passed": true,
+      "evidence": "Report lists confirmed paths and a detailed known-flaws section."
+    },
+    {
+      "text": "The watch case diameter is between 0.035 m and 0.065 m (real-world scale)",
+      "passed": true,
+      "evidence": "Case_Band is 51.3 mm across."
+    },
+    {
+      "text": "The dial has twelve hour markers as Roman numerals (geometry, text objects or texture)",
+      "passed": false,
+      "evidence": "Dial shows 11 Roman numerals: VI is deliberately omitted for the sub-seconds dial (traditional design), so not twelve."
+    },
+    {
+      "text": "A chain made of links or a link-like curve is present and lies on the table",
+      "passed": true,
+      "evidence": "Chain_Links (~60 links) lies flat on the table in the render."
+    },
+    {
+      "text": "The brass material has metallic 1.0 and a warm yellow base color",
+      "passed": true,
+      "evidence": "MAT_Brass_Aged metallic 1.0 with warm yellow node-driven color."
+    },
+    {
+      "text": "The table material shows wood grain (procedural or image texture) rather than a flat color",
+      "passed": true,
+      "evidence": "MAT_Walnut_Oiled: 25-node grain graph; grain visible in render."
+    },
+    {
+      "text": "The camera has depth of field enabled and is framed as a close-up on the watch",
+      "passed": true,
+      "evidence": "CAM_Hero 100 mm, DOF on at f/8 focused on the dial; tight framing."
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "failed": 1,
+    "total": 15,
+    "pass_rate": 0.933
+  }
+}

@@ -1,0 +1,632 @@
+{
+ "engine": "CYCLES",
+ "vt": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "res": [
+  1800,
+  1200,
+  100
+ ],
+ "samples": 512,
+ "n_obj": 34,
+ "nomat": [],
+ "defaults": [],
+ "n_bevelled": 6,
+ "n_mesh": 26,
+ "collections": {
+  "Cameras": 2,
+  "Environment": 1,
+  "Lights": 3,
+  "Model_PocketWatch": 28
+ },
+ "materials": {
+  "MAT_BluedSteel": {
+   "base": [
+    0.045,
+    0.085,
+    0.3
+   ],
+   "metal": 1.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 5,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "MAP_RANGE",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Brass_Aged": {
+   "base": "linked",
+   "metal": 1.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 30,
+   "types": [
+    "AMBIENT_OCCLUSION",
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VALTORGB"
+   ]
+  },
+  "MAT_Brass_Engraved_Cut": {
+   "base": [
+    0.28,
+    0.18,
+    0.08
+   ],
+   "metal": 1.0,
+   "rough": 0.45,
+   "coat": 0.0,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "MAT_Dial_Paint_Black": {
+   "base": [
+    0.012,
+    0.011,
+    0.01
+   ],
+   "metal": 0.0,
+   "rough": 0.28,
+   "coat": 0.6,
+   "trans": 0.0,
+   "nodes": 2,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ]
+  },
+  "MAT_Enamel_Dial": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 1.0,
+   "trans": 0.0,
+   "nodes": 19,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_VORONOI",
+    "VALTORGB",
+    "VECT_MATH"
+   ]
+  },
+  "MAT_Glass_Crystal": {
+   "base": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "metal": 0.0,
+   "rough": "linked",
+   "coat": 0.0,
+   "trans": 1.0,
+   "nodes": 5,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "MAP_RANGE",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE"
+   ]
+  },
+  "MAT_Walnut_Oiled": {
+   "base": "linked",
+   "metal": 0.0,
+   "rough": 0.5,
+   "coat": 0.35,
+   "trans": 0.0,
+   "nodes": 25,
+   "types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "MATH",
+    "MIX",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "TEX_WAVE",
+    "VALTORGB",
+    "VECT_MATH"
+   ]
+  }
+ },
+ "camera": {
+  "name": "CAM_Hero",
+  "lens": 100.0,
+  "dof": true,
+  "fstop": 8.0,
+  "z": 0.247,
+  "rot_deg": [
+   56.0,
+   -0.0,
+   18.0
+  ],
+  "shift_y": 0.0
+ },
+ "n_lights": 3,
+ "lights": [
+  [
+   "LGT_Key_Softbox",
+   "AREA",
+   5.0
+  ],
+  [
+   "LGT_Rim",
+   "AREA",
+   3.0
+  ],
+  [
+   "LGT_Fill",
+   "AREA",
+   0.6
+  ]
+ ],
+ "instances": 0,
+ "shared_meshes": 0,
+ "world": [
+  "BACKGROUND",
+  "OUTPUT_WORLD"
+ ],
+ "objects": [
+  {
+   "n": "Case_Back",
+   "dim": [
+    0.05,
+    0.05,
+    0.0049
+   ],
+   "zmin": 0.0,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Case_Band",
+   "dim": [
+    0.0513,
+    0.0513,
+    0.0055
+   ],
+   "zmin": 0.0049,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Case_Bezel",
+   "dim": [
+    0.0503,
+    0.0503,
+    0.0021
+   ],
+   "zmin": 0.0106,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Watch_Crystal",
+   "dim": [
+    0.0433,
+    0.0433,
+    0.0034
+   ],
+   "zmin": 0.0113,
+   "mods": [],
+   "mats": [
+    "MAT_Glass_Crystal"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Dial_Enamel",
+   "dim": [
+    0.0438,
+    0.0438,
+    0.0006
+   ],
+   "zmin": 0.0084,
+   "mods": [
+    "BOOLEAN"
+   ],
+   "mats": [
+    "MAT_Enamel_Dial"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Dial_Markings",
+   "dim": [
+    0.0416,
+    0.0416,
+    0.0001
+   ],
+   "zmin": 0.0089,
+   "mods": [],
+   "mats": [
+    "MAT_Dial_Paint_Black"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hand_Minute",
+   "dim": [
+    0.0183,
+    0.0118,
+    0.0001
+   ],
+   "zmin": 0.0093,
+   "mods": [],
+   "mats": [
+    "MAT_BluedSteel"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hand_Seconds",
+   "dim": [
+    0.0038,
+    0.0051,
+    0.0001
+   ],
+   "zmin": 0.0089,
+   "mods": [],
+   "mats": [
+    "MAT_BluedSteel"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hand_Hour_Boss",
+   "dim": [
+    0.0021,
+    0.0021,
+    0.0002
+   ],
+   "zmin": 0.0091,
+   "mods": [],
+   "mats": [
+    "MAT_BluedSteel"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hand_Minute_Boss",
+   "dim": [
+    0.0015,
+    0.0015,
+    0.0003
+   ],
+   "zmin": 0.0093,
+   "mods": [],
+   "mats": [
+    "MAT_BluedSteel"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hand_Seconds_Boss",
+   "dim": [
+    0.0009,
+    0.0009,
+    0.0002
+   ],
+   "zmin": 0.0089,
+   "mods": [],
+   "mats": [
+    "MAT_BluedSteel"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hand_Hour",
+   "dim": [
+    0.0117,
+    0.0084,
+    0.0001
+   ],
+   "zmin": 0.0092,
+   "mods": [],
+   "mats": [
+    "MAT_BluedSteel"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Case_Pendant",
+   "dim": [
+    0.0062,
+    0.0061,
+    0.0062
+   ],
+   "zmin": 0.0045,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Case_Crown",
+   "dim": [
+    0.0076,
+    0.0046,
+    0.0076
+   ],
+   "zmin": 0.0038,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Case_Bow",
+   "dim": [
+    0.0129,
+    0.0156,
+    0.0099
+   ],
+   "zmin": -0.0006,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Case_Lid",
+   "dim": [
+    0.0162,
+    0.0505,
+    0.05
+   ],
+   "zmin": 0.0123,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hinge_Knuckle_Case",
+   "dim": [
+    0.0021,
+    0.0032,
+    0.0021
+   ],
+   "zmin": 0.0112,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hinge_Knuckle_Lid_A",
+   "dim": [
+    0.0025,
+    0.0033,
+    0.0025
+   ],
+   "zmin": 0.011,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hinge_Knuckle_Lid_B",
+   "dim": [
+    0.0025,
+    0.0033,
+    0.0025
+   ],
+   "zmin": 0.011,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hinge_Leaf_Case",
+   "dim": [
+    0.0016,
+    0.003,
+    0.0016
+   ],
+   "zmin": 0.0105,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Hinge_Leaf_Lid",
+   "dim": [
+    0.0016,
+    0.0098,
+    0.002
+   ],
+   "zmin": 0.0121,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Chain_Links",
+   "dim": [
+    0.1211,
+    0.1319,
+    0.0035
+   ],
+   "zmin": 0.0001,
+   "mods": [
+    "ARRAY",
+    "CURVE"
+   ],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Chain_TBar",
+   "dim": [
+    0.0058,
+    0.0222,
+    0.0032
+   ],
+   "zmin": -0.0,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Chain_TBar_Ring",
+   "dim": [
+    0.0035,
+    0.0048,
+    0.0043
+   ],
+   "zmin": -0.0001,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Aged"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Lid_Inscription",
+   "dim": [
+    0.0041,
+    0.0158,
+    0.0151
+   ],
+   "zmin": 0.0294,
+   "mods": [],
+   "mats": [
+    "MAT_Brass_Engraved_Cut"
+   ],
+   "col": [
+    "Model_PocketWatch"
+   ]
+  },
+  {
+   "n": "Table_Walnut",
+   "dim": [
+    0.9,
+    0.6,
+    0.035
+   ],
+   "zmin": -0.035,
+   "mods": [
+    "BEVEL"
+   ],
+   "mats": [
+    "MAT_Walnut_Oiled"
+   ],
+   "col": [
+    "Environment"
+   ]
+  }
+ ],
+ "n_objects_listed": 26
+}

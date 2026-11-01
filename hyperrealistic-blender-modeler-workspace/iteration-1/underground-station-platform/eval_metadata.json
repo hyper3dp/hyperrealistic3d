@@ -1,0 +1,17 @@
+{
+  "eval_name": "underground-station-platform",
+  "prompt": "build me a hyperrealistic london underground style station platform in blender - curved tiled tunnel, the tracks, benches, posters, the lights, a bit grimy like it actually gets used. eye level shot looking down the platform into the tunnel. render it",
+  "assertions": [
+    "The platform tunnel is built at real scale: vault diameter roughly 6-8 m and the platform at least 60 m long",
+    "Repeated elements (wall bays, lights, benches or posters) are instances or linked duplicates rather than separate full copies",
+    "Repeated modules have visible variation (at least two variants or randomized transforms/material per instance)",
+    "Wall tiles show per-tile variation and grout (not a single flat color)",
+    "Grime is placed by physical logic (e.g. dirt near the floor, soot near ceiling or tunnel mouth, streaks) rather than uniform noise",
+    "The track includes running rails, sleepers and conductor rail(s)",
+    "Lighting comes from multiple practical light fittings along the platform backed by actual lights, not only a world color or single sun",
+    "The camera is at roughly eye height (1.3-1.8 m) looking along the platform toward the tunnel, with vertical lines kept vertical",
+    "Signage uses an invented station name or generic style rather than tracing exact trademarked logos, or the report states this choice",
+    "A Cycles render file and a .blend were written and confirmed by tool output",
+    "The final report gives honest known flaws and scene stats or performance notes"
+  ]
+}

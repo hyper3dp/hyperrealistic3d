@@ -1,0 +1,20 @@
+{
+  "eval_name": "rainy-street-fire-hydrant",
+  "prompt": "Make a photorealistic red fire hydrant on a wet city sidewalk at dusk. Peeling paint, some rust, puddles. Render it out at 1080p.",
+  "assertions": [
+    "A .blend file was saved and its path was confirmed by Blender tool output",
+    "A final rendered image file exists and Blender output confirmed it was written",
+    "The scene's render engine is Cycles and the view transform is AgX or Filmic",
+    "All visible mesh objects have a material assigned",
+    "Objects have descriptive names (no default names like Cube, Cylinder.001) and are grouped into named collections",
+    "At least one hero material has roughness driven by a texture or node network rather than a single constant",
+    "Hard-edged parts are bevelled (bevel modifier or bevelled geometry), not perfectly sharp",
+    "Before the final render the run performed an explicit QA pass (audit script or multi-angle inspection) and acted on what it found",
+    "The final report claims only objects, files and renders that tool output confirmed, and names remaining flaws",
+    "The hydrant is between 0.5 m and 1.0 m tall",
+    "Render resolution is 1920x1080 at 100%",
+    "The hydrant material mixes red paint with a rust or bare-metal layer through a mask (peeling paint)",
+    "The ground material has wet-look roughness variation with puddle areas of low roughness",
+    "Lighting reads as dusk (low or set sun, warm/blue tones, or street-light style lights)"
+  ]
+}
